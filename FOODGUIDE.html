@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Guides</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .hover-effect img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    .hover-black:hover {
+    color: #ffc107 !important;
+  }
+  </style>
+    <body>
+      <nav class="navbar navbar-expand-sm navbar-emphasis bg-warning-subtle py-3 sticky-top">
+        <div class="container-fluid justify-content fw-bold">
+          <img src="FR_Images/NC3.png" alt="FDA" width="100" height="50">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item bs-warning-text-emphasis">
+                <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active hover-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Restaurants
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item hover-black" href="TheCrunch.html">The Crunch</a></li>
+                    <li><a class="dropdown-item hover-black" href="#">Calle Coffee</a></li>
+                    <li><a class="dropdown-item hover-black" href="#">MugShot</a></li>
+                    <li><a class="dropdown-item hover-black" href="#">Doc Wings</a></li>
+                  </ul>
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link active hover-black" href="#">Food Recipe</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active hover-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Type of Food Guide
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item hover-black" href="#Study Guide">Study Food Guide</a></li>
+                    <li><a class="dropdown-item hover-black" href="#Stress Guide">Stress Food Guide</a></li>
+                  </ul>
+                </li>
+          </div>
+        </div>
+      </nav>  
+    </section>
+    <section class=" the-crunch text-warning py-5 text-center bg-emphasis">
+        <div class="container">
+          <h1 class="display-4 fw-bold">Food Guides</h1>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning" type="submit">Search</button>
+      </div>
+    </section>
+        </section>
+      <section class="the-crunch text-warning text-center bg-emphasis">
+        <div class="container">
+          <h1 class="fw-bold">What is Food Guides?</h1>
+          <p class="the-crunch text-dark lead mb-4">A <b class="FG fw-bold">Food Guides</b> is a visual or written tool that provides recommended types and portions of food to help people maintain a balanced, healthy diet and build lifelong habits for well-being and disease prevention.</p>
+          <div class="d-flex justify-content-center align-items-center hover-effect">
+            <div class="text-center">
+            <a href="#"><img src="FR_Images/TCCHICKEN.jpg" alt="..." class="img-fluid rounded mx-2 border border-warning" style="width: 80%;"></a>
+            <h5 class="Study text-dark mt-2">Study Food Guide</h5>
+          <p>Meals delivered within minutes in your doorsteps.</p>
+        </div>
+          <div class="text-center">
+            <a href="#"><img src="FR_Images/TCSODA.jpg" alt="..." class="img-fluid rounded mx-2 border border-warning" style="width: 80%;"></a>
+            <h5 class="Stress text-dark mt-2">Stress Food Guide</h5>
+            <p>Meals delivered within minutes in your doorsteps.</p>
+        </div>
+          </div>          
+        </div>
+      </section>
+      <hr class="footer-line text-warning" id="Study Guide">
+      <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+        <div class="container">
+          <h1 class="display-4 fw-bold mb-4 mt-4">Study Food Guide</h1>
+          <p class="the-crunch text-dark lead mb-4"> This are the Main Dish of The Crunch. Serves a Boneless Chicken with different flavors of sauce that you can try.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-4">
+            <div class="card border-warning" style="width: 18rem;">
+              <img src="FR_Images/TCHONEYGARLIC.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Honey Garlic</h5>
+                <p class="card-text">Sweet and savory boneless Korean chicken glazed with honey garlic.</p>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#M1">
+                  View
+                </button>
+              </div>
+            </div>
+            <div class="card border-warning" style="width: 18rem;">
+              <img src="FR_Images/TCKSTYLE.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">K-Style</h5>
+                <p class="card-text">A bold Korean-style chicken packed with traditional flavors and heat.</p>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#M2">
+                  View
+                </button>
+              </div>
+            </div>
+            <div class="card border-warning" style="width: 18rem;">
+              <img src="FR_Images/TCTERIYAKI.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Teriyaki</h5>
+                <p class="card-text">Tender chicken coated in a rich and tangy teriyaki glaze.</p>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#M3">
+                  View
+                </button>
+              </div>
+            </div>
+            <div class="card border-warning" style="width: 18rem;">
+              <img src="FR_Images/TCCHEESYBACON.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cheesy Bacon</h5>
+                <p class="card-text">Crispy chicken topped with melted cheese and smoky bacon bits.</p>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#M4">
+                  View
+                </button>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+        <div class="modal fade" id="M1" tabindex="-1" aria-labelledby="M1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header justify-content-between">
+                  <h5 class="modal-title" id="M1Label">Honey Garlic</h5>
+                  <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-body">
+                    <img src="FR_Images/TCKSTYLE.jpg" class="img-fluid rounded mb-3" alt="TCKSTYLE">
+                  <p>Flavorful and sticky boneless chicken glazed with honey and garlic—perfectly balanced sweetness.</p>
+                  <div class="ratio ratio-16x9">
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@abigailfmarquez/video/7497529210303417607" data-video-id="7497529210303417607" style="max-width: 100%; min-width: 100%;">
+                      <section>
+                        <a target="_blank" title="@abigailfmarquez" href="https://www.tiktok.com/@abigailfmarquez">@abigailfmarquez</a>
+                        3 Levels Mango Dessert for summer 🍨 🥭 ...
+                      </section>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+        <div class="modal fade" id="M2" tabindex="-1" aria-labelledby="M2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header justify-content-between">
+                    <h5 class="modal-title" id="M1Label">Honey Garlic</h5>
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="FR_Images/TCKSTYLE.jpg" class="img-fluid rounded mb-3" alt="TCKSTYLE">
+                    <p>Flavorful and sticky boneless chicken glazed with honey and garlic—perfectly balanced sweetness.</p>
+                    <div class="ratio ratio-16x9">
+                      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@abigailfmarquez/video/7497529210303417607" data-video-id="7497529210303417607" style="max-width: 100%; min-width: 100%;">
+                        <section>
+                          <a target="_blank" title="@abigailfmarquez" href="https://www.tiktok.com/@abigailfmarquez">@abigailfmarquez</a>
+                          3 Levels Mango Dessert for summer 🍨 🥭 ...
+                        </section>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="modal fade" id="M3" tabindex="-1" aria-labelledby="M3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header justify-content-between">
+                    <h5 class="modal-title" id="M1Label">Honey Garlic</h5>
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="FR_Images/TCKSTYLE.jpg" class="img-fluid rounded mb-3" alt="TCKSTYLE">
+                    <p>Flavorful and sticky boneless chicken glazed with honey and garlic—perfectly balanced sweetness.</p>
+                    <div class="ratio ratio-16x9">
+                      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@abigailfmarquez/video/7497529210303417607" data-video-id="7497529210303417607" style="max-width: 100%; min-width: 100%;">
+                        <section>
+                          <a target="_blank" title="@abigailfmarquez" href="https://www.tiktok.com/@abigailfmarquez">@abigailfmarquez</a>
+                          3 Levels Mango Dessert for summer 🍨 🥭 ...
+                        </section>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="modal fade" id="M4" tabindex="-1" aria-labelledby="M4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header justify-content-between">
+                    <h5 class="modal-title" id="M1Label">Honey Garlic</h5>
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="FR_Images/TCKSTYLE.jpg" class="img-fluid rounded mb-3" alt="TCKSTYLE">
+                    <p>Flavorful and sticky boneless chicken glazed with honey and garlic—perfectly balanced sweetness.</p>
+                    <div class="ratio ratio-16x9">
+                      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@abigailfmarquez/video/7497529210303417607" data-video-id="7497529210303417607" style="max-width: 100%; min-width: 100%;">
+                        <section>
+                          <a target="_blank" title="@abigailfmarquez" href="https://www.tiktok.com/@abigailfmarquez">@abigailfmarquez</a>
+                          3 Levels Mango Dessert for summer 🍨 🥭 ...
+                        </section>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+      <hr class="footer-line text-warning" id="Stress Guide">
+      <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+        <div class="container">
+          <h1 class="display-4 fw-bold mb-4 mt-4">Stress Food Guide</h1>
+          <p class="the-crunch text-dark lead mb-4">This are the Main Dish of The Crunch. Serves a Boneless Chicken with different flavors of sauce that you can try.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-4">
+            <div class="card border-warning" style="width: 18rem;">
+              <img src="FR_Images/TCD1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Honey Garlic</h5>
+                <p class="card-text">Sweet and savory boneless Korean chicken glazed with honey garlic.</p>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#D1">View</button>
+              </div>
+            </div>
+            <div class="card border-warning" style="width: 18rem;">
+              <img src="FR_Images/TCD2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">K-Style</h5>
+                <p class="card-text">A bold Korean-style chicken packed with traditional flavors and heat.</p>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#D2">View</button>
+              </div>
+            </div>
+            <div class="card border-warning" style="width: 18rem;">
+              <img src="FR_Images/TCD3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Teriyaki</h5>
+                <p class="card-text">Tender chicken coated in a rich and tangy teriyaki glaze.</p>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#D3">View</button>
+              </div>
+            </div>
+            <div class="card border-warning" style="width: 18rem;">
+              <img src="FR_Images/TCD4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cheesy Bacon</h5>
+                <p class="card-text">Crispy chicken topped with melted cheese and smoky bacon bits.</p>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#D4">View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="D1" tabindex="-1" aria-labelledby="M1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header justify-content-between">
+                    <h5 class="modal-title" id="M1Label">Honey Garlic</h5>
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="FR_Images/TCKSTYLE.jpg" class="img-fluid rounded mb-3" alt="TCKSTYLE">
+                    <p>Flavorful and sticky boneless chicken glazed with honey and garlic—perfectly balanced sweetness.</p>
+                    <div class="ratio ratio-16x9">
+                      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@abigailfmarquez/video/7497529210303417607" data-video-id="7497529210303417607" style="max-width: 100%; min-width: 100%;">
+                        <section>
+                          <a target="_blank" title="@abigailfmarquez" href="https://www.tiktok.com/@abigailfmarquez">@abigailfmarquez</a>
+                          3 Levels Mango Dessert for summer 🍨 🥭 ...
+                        </section>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="modal fade" id="D2" tabindex="-1" aria-labelledby="M2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header justify-content-between">
+                    <h5 class="modal-title" id="M1Label">Honey Garlic</h5>
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="FR_Images/TCKSTYLE.jpg" class="img-fluid rounded mb-3" alt="TCKSTYLE">
+                    <p>Flavorful and sticky boneless chicken glazed with honey and garlic—perfectly balanced sweetness.</p>
+                    <div class="ratio ratio-16x9">
+                      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@abigailfmarquez/video/7497529210303417607" data-video-id="7497529210303417607" style="max-width: 100%; min-width: 100%;">
+                        <section>
+                          <a target="_blank" title="@abigailfmarquez" href="https://www.tiktok.com/@abigailfmarquez">@abigailfmarquez</a>
+                          3 Levels Mango Dessert for summer 🍨 🥭 ...
+                        </section>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="modal fade" id="D3" tabindex="-1" aria-labelledby="M3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header justify-content-between">
+                    <h5 class="modal-title" id="M1Label">Honey Garlic</h5>
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="FR_Images/TCKSTYLE.jpg" class="img-fluid rounded mb-3" alt="TCKSTYLE">
+                    <p>Flavorful and sticky boneless chicken glazed with honey and garlic—perfectly balanced sweetness.</p>
+                    <div class="ratio ratio-16x9">
+                      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@abigailfmarquez/video/7497529210303417607" data-video-id="7497529210303417607" style="max-width: 100%; min-width: 100%;">
+                        <section>
+                          <a target="_blank" title="@abigailfmarquez" href="https://www.tiktok.com/@abigailfmarquez">@abigailfmarquez</a>
+                          3 Levels Mango Dessert for summer 🍨 🥭 ...
+                        </section>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="modal fade" id="D4" tabindex="-1" aria-labelledby="M4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header justify-content-between">
+                    <h5 class="modal-title" id="M1Label">Honey Garlic</h5>
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="FR_Images/TCKSTYLE.jpg" class="img-fluid rounded mb-3" alt="TCKSTYLE">
+                    <p>Flavorful and sticky boneless chicken glazed with honey and garlic—perfectly balanced sweetness.</p>
+                    <div class="ratio ratio-16x9">
+                      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@abigailfmarquez/video/7497529210303417607" data-video-id="7497529210303417607" style="max-width: 100%; min-width: 100%;">
+                        <section>
+                          <a target="_blank" title="@abigailfmarquez" href="https://www.tiktok.com/@abigailfmarquez">@abigailfmarquez</a>
+                          3 Levels Mango Dessert for summer 🍨 🥭 ...
+                        </section>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+      <script async src="https://www.tiktok.com/embed.js"></script>
+
+      </section>
+      <footer class="bg-warning-subtle text-dark py-4">
+        <div class="container text-center">
+          <img src="FR_Images/NutriCravesLogo.png" alt="FDA" width="150" height="150">
+          <p><b>SHARIEN SALARDA | CHARLES CARILLO</b></p>
+            <p class="mb-2">&copy; 2025 NutriCraves. All rights reserved. <b>NutriCraves</b> is a health-focused food brand that offers nutritious, crave-worthy meals made with fresh, wholesome ingredients. It's all about satisfying your cravings the healthy way.</p>
+          </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
