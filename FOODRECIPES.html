@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .hover-effect img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    .hover-black:hover {
+    color: #ffc107 !important;
+  }
+  </style>
+    <body>
+      <body>
+        <nav class="navbar navbar-expand-sm navbar-emphasis bg-warning-subtle py-3 sticky-top">
+          <div class="container-fluid justify-content fw-bold">
+            <img src="FR_Images/NC3.png" alt="FDA" width="100" height="50">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item bs-warning-text-emphasis">
+                  <a class="nav-link active hover-black"  aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active hover-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Restaurants
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item hover-black" href="TheCrunch.html">The Crunch</a></li>
+                      <li><a class="dropdown-item hover-black" href="Calle Cafe.html">Calle Coffee</a></li>
+                      <li><a class="dropdown-item hover-black" href="MugShot.html">MugShot</a></li>
+                      <li><a class="dropdown-item hover-black" href="DocWings.html">Doc Wings</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active hover-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Food Recipe
+                      </a>
+                      <ul class="dropdown-menu">
+                        <p class="MD text-center">Main Dish Recipe</p>
+                        <li><a class="dropdown-item hover-black" href="#Breakfast">Breakfast</a></li>
+                        <li><a class="dropdown-item hover-black" href="#Lunch">Lunch</a></li>
+                        <li><a class="dropdown-item hover-black" href="#Brunch">Brunch</a></li>
+                        <li><a class="dropdown-item hover-black" href="#Dinner">Dinner</a></li>
+                        <p class="MD text-center">Drinks Recipe</p>
+                        <li><a class="dropdown-item hover-black" href="#Drinks Recipe">Smoothy</a></li>
+                        <li><a class="dropdown-item hover-black" href="#Drink2">Fruity</a></li>
+                        <p class="MD text-center">Snacks Recipe</p>
+                        <li><a class="dropdown-item hover-black" href="#Snacks1">Ice Cream</a></li>
+                        <li><a class="dropdown-item hover-black" href="#Snacks2">Fruit Chips</a></li>
+                      </ul>
+                    </li>
+                <li class="nav-item active">
+                  <a class="nav-link active hover-black" href="FOODGUIDE.html">Food Guides</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>  
+      </section>
+    <section class=" the-crunch text-warning py-5 text-center bg-emphasis">
+        <div class="container">
+          <h1 class="display-4 fw-bold">Find More Recipes</h1>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 border-warning" type="search" placeholder="I'm Hungry" aria-label="Search">
+            <button class="btn btn-outline-warning" type="submit">Search</button>
+      </div>
+    </section>
+        </section>
+      <section class="the-crunch text-warning text-start bg-emphasis">
+        <div class="container">
+          <h1 class="fw-bold text-start">EXPLORE THE RECIPES</h1>
+        </div>
+        </section>
+        <style>
+          .hover-pop {
+            transition: transform 0.3s ease;
+          }
+          .hover-pop:hover {
+            transform: scale(1.1);
+          }
+        </style>
+        
+        <div class="d-flex justify-content-center flex-wrap gap-5 text-center">
+          <div>
+            <a href="#Breakfast">
+              <img src="FR_Images/CHOCOOAT.jpg" class="rounded-circle hover-pop" alt="User 1" width="150" height="150">
+            </a>
+            <p class="mt-2">BREAKFAST</p>
+          </div>
+          <div>
+            <a href="#Lunch">
+              <img src="FR_Images/CREAMYMUSHROOM.jpg" class="rounded-circle hover-pop" alt="User 2" width="150" height="150">
+            </a>
+            <p class="mt-2">LUNCH</p>
+          </div>
+          <div>
+            <a href="#Brunch">
+              <img src="FR_Images/MSDRINK4.jpg" class="rounded-circle hover-pop" alt="User 3" width="150" height="150">
+            </a>
+            <p class="mt-2">BRUNCH</p>
+          </div>
+          <div>
+            <a href="#Dinner">
+              <img src="FR_Images/cc2.jpg" class="rounded-circle hover-pop" alt="User 4" width="150" height="150">
+            </a>
+            <p class="mt-2">DINNER</p>
+          </div>
+          <div>
+            <a href="#Drinks Recipe">
+              <img src="FR_Images/MSKIMCHI.jpg" class="rounded-circle hover-pop" alt="User 5" width="150" height="150">
+            </a>
+            <p class="mt-2">DRINKS</p>
+          </div>
+          <div>
+            <a href="#Snacks Recipe">
+              <img src="FR_Images/MSSNACKS1.jpg" class="rounded-circle hover-pop" alt="User 6" width="150" height="150">
+            </a>
+            <p class="mt-2">SNACKS</p>
+          </div>
+        </div>
+        
+        <section class="the-crunch text-warning py-5 bg-emphasis">
+          <div class="container">
+            <h1 class="fw-bold text-start">RECOMMENDED GO-TO CRAVINGS RESTURANTS</h1>
+            <p class="the-crunch text-dark lead mb-4"><b>The Crunch</b> has main dish, snacks and drinks to offer for all customers.</p>
+            <div class="row justify-content-center">
+              <div class="col-md-3 mb-4">
+                <img src="FR_Images/TC5.jpg" alt="..." class="img-fluid rounded border border-warning">
+                <h4 class="Stress text-dark mt-2 fw-bold">The Crunch <a href="TheCrunch.html" class="btn btn-warning btn-sm text-start m-2">View Restaurant</a></h4>
+              </div>
+              <div class="col-md-3 mb-4">
+                <img src="FR_Images/CALLECAFE1.jpg" alt="..." class="img-fluid rounded border border-warning">
+                <h4 class="Stress text-dark mt-2 fw-bold">Calle Cafe <a href="Calle Cafe.html" class="btn btn-warning btn-sm text-start m-2">View Restaurant</a>
+                </h4>
+              </div>
+              <div class="col-md-3 mb-4">
+                <img src="FR_Images/MUGSHOT3.jpg" alt="..." class="img-fluid rounded border border-warning">
+                <h4 class="Stress text-dark mt-2 fw-bold">Mugshot <a href="MugShot.html" class="btn btn-warning btn-sm text-start m-2">View Restaurant</a>
+                </h4>
+              </div>
+              <div class="col-md-3 mb-4">
+                <img src="FR_Images/docs2.jpg" alt="..." class="img-fluid rounded border border-warning">
+                <h4 class="Stress text-dark mt-2 fw-bold">Doc Wings <a href="DocWings.html" class="btn btn-warning btn-sm text-start m-2">View Restaurant</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <hr class="footer-line text-light" id="Breakfast">
+          <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+           <div class="container mt-4">
+            <h1 class="fw-bold text-start">BREAKFAST</h1>
+            <p class="the-crunch text-dark text-start lead mb-4">
+              The first meal of the day, usually eaten in the morning, often includes eggs, toast, cereal, or fruit.</p>
+            </div>
+            <section class="container my-5">
+              <div class="row">
+                  <div class="col-md-6 ">
+                      <img src="FR_Images/CHOCOOAT.jpg" alt="Delicious food overview" class="img-fluid rounded shadow">
+                  </div>
+                   <div class="col-md-6 text-warning text-start">
+                      <h1>Chocolate and Banana Oats</h1>
+                      <h3 class="the-crunch text-dark">
+                        Warm oats mixed with rich chocolate and fresh banana slices for a sweet and healthy start to your day.
+                      </h3>
+                      <h4 class="text-dark mt-4">SERVINGS:</h4>
+                      <h5 class="R1 text-dark mb-4 lead fw-bold">
+                          <li>1-2 Servings</li>
+                      </h5>
+                      <h4 class="text-dark mt-4">RECIPE:</h4>
+                      <h5 class="R1 text-dark mb-4 lead fw-bold">
+                      <li>50 grams of oats</li>
+                      <li>20g vanilla (or chocolate) protein powder</li>
+                      <li>60ml milk of choice (I use soy)</li>
+                      <li>60g yoghurt</li>
+                      <li>1/2 banana, mashed </li>                    
+                      <li>1 tbsp chia seeds</li>
+                      <li>1 tbsp cocoa powder</li>
+                      <li>1tbsp honey or maple syrup Toppings</li>
+                      <li> chocolate chips </li>
+                      <li>Banana slices Method </li>
+                      </h5>
+                      <h4 class="text-dark mt-4">TIPS:</h4>
+                      <h5 class="R1 text-dark mb-4 lead fw-bold">
+                          <li>Mix together your oats, milk, chia seeds, mashed banana, yoghurt, maple syrup and protein powderMix together your oats, milk, chia seeds, mashed banana, yoghurt, maple syrup and protein powder</li>
+                          <li>Leave in the fridge overnight 3. In the morning top with chocolate chips and banana slices</li>
+                      </h5>
+                      <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#HB1">
+                        How to make?
+                      </button>
+                  </div>
+              </div>
+            </section> 
+
+            <hr class="footer-line text-light" id="Lunch">
+            <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+             <div class="container mt-4">
+              <h1 class="fw-bold text-start">LUNCH</h1>
+              <p class="the-crunch text-dark text-start lead mb-4">
+                A midday meal, typically lighter than dinner, often includes sandwiches, salads, or rice-based dishes.</p>
+            <section class="container my-5">
+                <div class="row align">
+                  <div class="col-md-6 text-warning text-start">
+                    <h1>Creamy Mushroom Chicken</h1>
+                    <h3 class="text-dark">
+                        Tender chicken cooked in a rich, creamy mushroom sauce, perfect with rice or pasta.
+                    </h3>
+                    <h4 class="text-dark mt-4">SERVINGS:</h4>
+                    <h5 class="R1 text-dark mb-4 lead fw-bold">
+                        <li>4-6 Servings</li>
+                    </h5>
+                    <h4 class="text-dark mt-4">RECIPE:</h4>
+                    <h5 class="R1 text-dark mb-4 lead fw-bold">
+                    <li>Chicken (cut into serving pieces) - ½ kilo</li>
+                    <li>Salt & pepper (for marinating) - 1 tsp each</li>
+                    <li>Cooking oil - 2 tbsp</li>
+                    <li>Garlic (bawang, minced) - 4 cloves</li>
+                    <li>Onion (sibuyas, sliced) - 1 medium  </li>                    
+                    <li>Mushrooms (sliced, canned or fresh) - 1 cup</li>
+                    <li>Soy sauce (toyo) - 2 tbsp</li>
+                    <li>Fish sauce (patis) - 1 tbsp</li>
+                    <li>Sugar (asukal) - 1 tsp (adjust to taste)</li>
+                    <li>All-purpose cream - 1 cup (or 250ml pack)</li>
+                    </h5>
+                    <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#HB2">
+                      How to make?
+                    </button>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <img src="FR_Images/CREAMYMUSHROOM.jpg" alt="Delicious food overview" class="img-fluid rounded shadow">
+                  </div>
+                </div>
+              </section>
+
+              <hr class="footer-line text-light" id="Brunch">
+              <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+               <div class="container mt-4">
+                <h1 class="fw-bold text-start">BRUNCH</h1>
+                <p class="the-crunch text-dark text-start lead mb-4">
+                    A late morning meal that combines breakfast and lunch items, like Burrito, eggs, and sandwiches.</p>
+                </div>
+                <section class="container my-5">
+                  <div class="row">
+                      <div class="col-md-6 ">
+                          <img src="FR_Images/BACONANDEGG.jpg" alt="Delicious food overview" class="img-fluid rounded shadow">
+                      </div>
+                       <div class="col-md-6 the-crunch text-warning text-start">
+                          <h1> Bacon and Egg Burritos</h1>
+                          <h3 class="the-crunch text-dark">
+                            A hearty wrap filled with crispy bacon, fluffy scrambled eggs, and melted cheese—perfect for a filling mid-morning meal.
+                          </h3>
+                          <h4 class="text-dark mt-4">SERVINGS:</h4>
+                    <h5 class="R1 text-dark mb-4 lead fw-bold">
+                        <li>6-8 Servings</li>
+                    </h5>
+                    <h4 class="text-dark mt-4">RECIPE:</h4>
+                    <h5 class="R1 text-dark mb-4 lead fw-bold">
+                    <li>8 large eggs</li>
+                    <li>100g egg whites</li>
+                    <li>200g blended cottage cheese</li>
+                    <li>4 slices turkey bacon</li>
+                    <li>½ tbsp salt, adjust to taste</li>                    
+                    <li>Pepper, Garlic</li>
+                    <li>2 bell peppers</li>
+                    <li>1 onion</li>
+                    <li>4 laughing cow cheese wedges</li>
+                    <li>4 slices normal bacon</li>
+                    <li>6 Burrito tortillas</li>
+                   </h5>
+                    <h4 class="text-dark mt-4">SAUCE:</h4>
+                    <h5 class="R1 text-dark mb-4 lead fw-bold">
+                    <li>60g light sour cream or yogurt</li>
+                    <li>60g hot sauce</li>
+                    </h5>
+                          <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#HB3">
+                            How to make?
+                          </button>
+                      </div>
+                  </div>
+                </section>        
+        </section>
+
+        <hr class="footer-line text-light" id="Dinner">
+        <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+         <div class="container mt-4">
+          <h1 class="fw-bold text-start">DINNER</h1>
+          <p class="the-crunch text-dark text-start lead mb-4">
+            The main meal of the day, usually eaten in the evening, often includes meat or fish, vegetables, and starches like rice or potatoes.</p>
+        <section class="container my-5">
+            <div class="row align">
+              <div class="col-md-6 text-warning text-start">
+                <h1>Creamy Garlic Chicken</h1>
+                <h3 class="text-dark">
+                    Juicy chicken breast in a smooth garlic cream sauce, served warm and comforting for the evening.
+                </h3>
+                <h4 class="text-dark mt-4">SERVINGS:</h4>
+                <h5 class="R1 text-dark mb-4 lead fw-bold">
+                    <li>4-6 Servings</li>
+                </h5>
+                <h4 class="text-dark mt-4">RECIPE:</h4>
+                <h5 class="R1 text-dark mb-4 lead fw-bold">
+                <li>Chicken breast (cut bites size)</li>
+                <li>Paprika powder</li>
+                <li>Salt</li>
+                <li>Pepper</li>
+                <li>Lemon juice</li>                    
+                <li>1/2 onions</li>
+                <li>2 cloves garlic minced</li>
+                <li>1tbs regular flour</li>
+                </h5>
+                <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#HB4">
+                  How to make?
+                </button>
+              </div>
+              <div class="col-md-6 text-center">
+                <img src="FR_Images/CREAMYGARLIC.jpg" alt="Delicious food overview" class="img-fluid rounded shadow">
+              </div>
+            </div>
+          </section>
+        </section>
+             </div>
+            </section>
+          </section>
+
+          <hr class="footer-line text-light" id="Drinks Recipe">
+          <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+           <div class="container mt-4">
+            <h1 class="fw-bold text-start">DRINKS</h1>
+            <p class="the-crunch text-dark text-start lead mb-4">
+                Beverages served hot or cold, such as water, juice, soda, tea, coffee, or alcoholic options like wine and cocktails.</p>
+            </div>
+            <section class="container my-5">
+              <div class="row">
+                  <div class="col-md-6 ">
+                      <img src="FR_Images/OREOMILK.jpg" alt="Delicious food overview" class="img-fluid rounded shadow">
+                  </div>
+                   <div class="col-md-6 the-crunch text-warning text-start">
+                      <h1>Oreo Milk</h1>
+                      <h3 class="the-crunch text-dark">
+                        A sweet and creamy blend of crushed Oreos and milk, like dessert in a glass.
+                      </h3>
+                      <h4 class="text-dark mt-4">SERVINGS:</h4>
+                      <h5 class="R1 text-dark mb-4 lead fw-bold">
+                          <li>1 Serving</li>
+                      </h5>
+                      <h4 class="text-dark mt-4">RECIPE:</h4>
+                      <h5 class="R1 text-dark mb-4 lead fw-bold">
+                      <li>3 pieces of oreos</li>
+                      <li>Paprika powder</li>
+                      <li>Splash of Milk</li>
+                      <li>Ice</li>
+                      <li>Milk</li>                    
+                      <li>¼ cup heavy cream</li>
+                      <li>Splash of simple syrup</li>
+                      <li>¼ tsp cocoa powder</li>
+                      </h5>
+                      <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#HB5">
+                        How to make?
+                      </button>
+                  </div>
+              </div>
+              <hr class="footer-line text-light">
+              <section class="container my-5 mt-4" id="Drink2">
+                <div class="row align">
+                  <div class="col-md-6 text-warning text-start">
+                    <h1>Lychee Yakult</h1>
+                    <h3 class="text-dark">
+                        A refreshing mix of sweet lychee and probiotic Yakult for a fruity, tangy drink.
+                    </h3>
+                    <h4 class="text-dark mt-4">SERVINGS:</h4>
+                    <h5 class="R1 text-dark mb-4 lead fw-bold">
+                        <li>1 Serving</li>
+                    </h5>
+                    <h4 class="text-dark mt-4">RECIPE:</h4>
+                    <h5 class="R1 text-dark mb-4 lead fw-bold">
+                    <li>10-20ml Lychee Syrup</li>
+                    <li>Ice</li>
+                    <li>2-4 of yakult</li>
+                    <li>50ml Soda</li>
+                    <li>1 pieces Lychee</li>                   
+                    </h5>
+                    <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#HB6">
+                      How to make?
+                    </button>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <img src="FR_Images/LYCHEEYAKULT.jpg" alt="Delicious food overview" class="img-fluid rounded shadow">
+                  </div>
+                </div>
+              </section>
+            </section>   
+            
+              <hr class="footer-line text-light" id="Snacks Recipe">
+              <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+               <div class="container mt-4">
+                <h1 class="fw-bold text-start">Snacks</h1>
+                <p class="the-crunch text-dark text-start lead mb-4">
+                    Small portions of food eaten between meals, such as chips, cookies, nuts, or fruit.</p>
+                </div>
+                <section class="container my-5">
+                  <div class="row">
+                      <div class="col-md-6 ">
+                          <img src="FR_Images/MILOS.jpg" alt="Delicious food overview" class="img-fluid rounded shadow">
+                      </div>
+                       <div class="col-md-6 the-crunch text-warning text-start">
+                          <h1>Milo Ice Cream Sandwich</h1>
+                          <h3 class="the-crunch text-dark">
+                            Cold and chocolatey Milo ice cream between two soft cookies perfect for a quick treat.
+                          </h3>
+                          <h4 class="text-dark mt-4">SERVINGS:</h4>
+                          <h5 class="R1 text-dark mb-4 lead fw-bold">
+                              <li>6-8 Servings</li>
+                          </h5>
+                          <h4 class="text-dark mt-4">RECIPE:</h4>
+                          <h5 class="R1 text-dark mb-4 lead fw-bold">
+                          <li>3 sachet of MILO</li>
+                          <li>150Ml Condensed Milk</li>
+                          <li>500Ml all purpose cream</li>
+                          <li>Graham Crackers</li>
+                          </h5>
+                          <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#HB7">
+                            How to make?
+                          </button>
+                      </div>
+                  </div>
+                  <section class="container my-5">
+                    <div class="row align">
+                      <div class="col-md-6 text-warning text-start">
+                        <h1>Banana Ring</h1>
+                        <h3 class="text-dark">
+                            A fun, ring-shaped fried banana snack, crispy outside and sweet inside.
+                        </h3>
+                        <h4 class="text-dark mt-4">SERVINGS:</h4>
+                        <h5 class="R1 text-dark mb-4 lead fw-bold">
+                            <li>3-4 Servings</li>
+                        </h5>
+                        <h4 class="text-dark mt-4">RECIPE:</h4>
+                        <h5 class="R1 text-dark mb-4 lead fw-bold">
+                        <li>8 Saging na saba</li>
+                        <li>¼ cup of sugar</li>
+                        <li>1 ½ Rice Flour</li>
+                        <li>2 Eggs</li>
+                        <li>Lemon juice</li>                    
+                        <li>BreadCrumbs</li>
+                        </h5>
+                        <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#HB8">
+                          How to make?
+                        </button>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <img src="FR_Images/BANANA.jpg" alt="Delicious food overview" class="img-fluid rounded shadow">
+                      </div>
+                    </div>
+                  </section>
+                </section>   
+    </section>
+        </section>
+        <div class="modal fade" id="HB1" tabindex="-1" aria-labelledby="howToCookModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-m">
+              <div class="modal-content">
+                <div class="modal-header justify-content-between">
+                  <h5 class="modal-title text-warning" id="HB1">How to Make?</h5>
+                  <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@alicelovesbreakfast/video/7427422178947173665" data-video-id="7427422178947173665" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@alicelovesbreakfast" href="https://www.tiktok.com/@alicelovesbreakfast?refer=embed">@alicelovesbreakfast</a> HIGH PROTEIN BANANA CHOCOLATE OERNIGHT OATS  These delicious overnight oats are high in protein and fibre whilst tasting delicious. Follow @alicelovesbreakfast for more simple and healthy recipes like this. INGREDIENTS 👩🏻‍🍳 (per serving) ➡️ 50g oats ➡️ 20g vanilla (or chocolate) protein powder (@myprotein - link in my bio and code ALICESCOTT gets you the best discount) ➡️ 60ml milk of choice (I use soy) ➡️ 60g yoghurt  ➡️ 1&#47;2 banana, mashed  ➡️ 1 tbsp chia seeds ➡️ 1 tbsp cocoa powder ➡️ 1tbsp honey or maple syrup Toppings ➡️ chocolate chips ➡️ banana slices  Method 1. Mix together your oats, milk, chia seeds, mashed banana, yoghurt, maple syrup and protein powder 2. Leave in the fridge overnight 3. In the morning top with chocolate chips and banana slices  <a title="overnightoats" target="_blank" href="https://www.tiktok.com/tag/overnightoats?refer=embed">#overnightoats</a> <a title="healthybreakfast" target="_blank" href="https://www.tiktok.com/tag/healthybreakfast?refer=embed">#healthybreakfast</a> <a title="breakfastidea" target="_blank" href="https://www.tiktok.com/tag/breakfastidea?refer=embed">#breakfastidea</a> <a title="highprotein" target="_blank" href="https://www.tiktok.com/tag/highprotein?refer=embed">#highprotein</a> <a title="proteinrecipes" target="_blank" href="https://www.tiktok.com/tag/proteinrecipes?refer=embed">#proteinrecipes</a> <a title="breakfastinspiration" target="_blank" href="https://www.tiktok.com/tag/breakfastinspiration?refer=embed">#breakfastinspiration</a> <a title="overnightoats" target="_blank" href="https://www.tiktok.com/tag/overnightoats?refer=embed">#overnightoats</a> <a title="porridgeideas" target="_blank" href="https://www.tiktok.com/tag/porridgeideas?refer=embed">#porridgeideas</a> <a title="chocolateoats" target="_blank" href="https://www.tiktok.com/tag/chocolateoats?refer=embed">#Chocolateoats</a> <a title="bananachocolateoats" target="_blank" href="https://www.tiktok.com/tag/bananachocolateoats?refer=embed">#Bananachocolateoats</a> <a target="_blank" title="♬ Bad Reputation - Joan Jett" href="https://www.tiktok.com/music/Bad-Reputation-7094669525731248129?refer=embed">♬ Bad Reputation - Joan Jett</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="HB2" tabindex="-1" aria-labelledby="howToCookModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-m">
+              <div class="modal-content">
+                <div class="modal-header justify-content-between">
+                  <h5 class="modal-title text-warning" id="HB2">How to Make?</h5>
+                  <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@clcooks1/video/7346854243946597638" data-video-id="7346854243946597638" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@clcooks1" href="https://www.tiktok.com/@clcooks1?refer=embed">@clcooks1</a> Creamy chicken mushroom <a title="lunch" target="_blank" href="https://www.tiktok.com/tag/lunch?refer=embed">#lunch</a> <a title="chickenrecipe" target="_blank" href="https://www.tiktok.com/tag/chickenrecipe?refer=embed">#chickenrecipe</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a title="foodie" target="_blank" href="https://www.tiktok.com/tag/foodie?refer=embed">#foodie</a> <a title="foodlover" target="_blank" href="https://www.tiktok.com/tag/foodlover?refer=embed">#foodlover</a> <a title="foodblogger" target="_blank" href="https://www.tiktok.com/tag/foodblogger?refer=embed">#foodblogger</a> <a title="homecooking" target="_blank" href="https://www.tiktok.com/tag/homecooking?refer=embed">#homecooking</a> <a target="_blank" title="♬ original sound  - C&#38;L Cooks" href="https://www.tiktok.com/music/original-sound-CL-Cooks-7346854438614354693?refer=embed">♬ original sound  - C&#38;L Cooks</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="HB3" tabindex="-1" aria-labelledby="howToCookModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-m">
+              <div class="modal-content">
+                <div class="modal-header justify-content-between">
+                  <h5 class="modal-title text-warning" id="HB3">How to Make?</h5>
+                  <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@stealth_health_life/video/7080704074374745390" data-video-id="7080704074374745390" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@stealth_health_life" href="https://www.tiktok.com/@stealth_health_life?refer=embed">@stealth_health_life</a> MEAL PREP BREAKFAST BURRITOS <a title="recipe" target="_blank" href="https://www.tiktok.com/tag/recipe?refer=embed">#recipe</a> <a title="healthyrecipe" target="_blank" href="https://www.tiktok.com/tag/healthyrecipe?refer=embed">#healthyrecipe</a> <a title="mealprep" target="_blank" href="https://www.tiktok.com/tag/mealprep?refer=embed">#mealprep</a> <a target="_blank" title="♬ original sound - Stealth Health Life" href="https://www.tiktok.com/music/original-sound-7080704066304707374?refer=embed">♬ original sound - Stealth Health Life</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="HB4" tabindex="-1" aria-labelledby="howToCookModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-m">
+              <div class="modal-content">
+                <div class="modal-header justify-content-between">
+                  <h5 class="modal-title text-warning" id="HB4">How to Make?</h5>
+                  <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-body">
+                  <div>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@cafe.pece/video/7286464700156595462" data-video-id="7286464700156595462" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@cafe.pece" href="https://www.tiktok.com/@cafe.pece?refer=embed">@cafe.pece</a> Creamiest Garlic Chickenn 🫶🏻✨  simple banget cuma 15 menit jadii!  Full resep tertulis di instagram @kharisma.pc 💖 . <a title="chickenrecipe" target="_blank" href="https://www.tiktok.com/tag/chickenrecipe?refer=embed">#chickenrecipe</a> <a title="lunchideas" target="_blank" href="https://www.tiktok.com/tag/lunchideas?refer=embed">#lunchideas</a> <a title="recipes" target="_blank" href="https://www.tiktok.com/tag/recipes?refer=embed">#recipes</a> <a title="cooking" target="_blank" href="https://www.tiktok.com/tag/cooking?refer=embed">#cooking</a> <a title="foryoupage" target="_blank" href="https://www.tiktok.com/tag/foryoupage?refer=embed">#foryoupage</a> <a target="_blank" title="♬ original sound - 🎧&lt𝟑" href="https://www.tiktok.com/music/original-sound-7282782077798796065?refer=embed">♬ original sound - 🎧&lt𝟑</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="HB5" tabindex="-1" aria-labelledby="howToCookModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-m">
+              <div class="modal-content">
+                <div class="modal-header justify-content-between">
+                  <h5 class="modal-title text-warning" id="HB5">How to Make?</h5>
+                  <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lulu.tao/video/7361621937161915690" data-video-id="7361621937161915690" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@lulu.tao" href="https://www.tiktok.com/@lulu.tao?refer=embed">@lulu.tao</a> I think this is my new favorite drink 🤤 <a title="boba" target="_blank" href="https://www.tiktok.com/tag/boba?refer=embed">#boba</a> <a title="easydrinkrecipe" target="_blank" href="https://www.tiktok.com/tag/easydrinkrecipe?refer=embed">#easydrinkrecipe</a> <a title="drinkrecipe" target="_blank" href="https://www.tiktok.com/tag/drinkrecipe?refer=embed">#drinkrecipe</a> <a title="oreo" target="_blank" href="https://www.tiktok.com/tag/oreo?refer=embed">#oreo</a> <a title="cookiesandcream" target="_blank" href="https://www.tiktok.com/tag/cookiesandcream?refer=embed">#cookiesandcream</a> <a target="_blank" title="♬ sketchbook - Luxid" href="https://www.tiktok.com/music/sketchbook-7104445803275487233?refer=embed">♬ sketchbook - Luxid</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="HB6" tabindex="-1" aria-labelledby="howToCookModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-m">
+              <div class="modal-content">
+                <div class="modal-header justify-content-between">
+                  <h5 class="modal-title text-warning" id="HB6">How to Make?</h5>
+                  <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@deborasaniaa/video/7306109797294705925" data-video-id="7306109797294705925" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@deborasaniaa" href="https://www.tiktok.com/@deborasaniaa?refer=embed">@deborasaniaa</a> Lychee yakult✨ recipe ada di video ya!!  <a title="recipesoftiktok" target="_blank" href="https://www.tiktok.com/tag/recipesoftiktok?refer=embed">#recipesoftiktok</a> <a title="recipe" target="_blank" href="https://www.tiktok.com/tag/recipe?refer=embed">#recipe</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a title="noncoffeedrinkers" target="_blank" href="https://www.tiktok.com/tag/noncoffeedrinkers?refer=embed">#noncoffeedrinkers</a> <a title="noncoffee" target="_blank" href="https://www.tiktok.com/tag/noncoffee?refer=embed">#noncoffee</a> <a target="_blank" title="♬ Otra Vez - ProdMarvin" href="https://www.tiktok.com/music/Otra-Vez-7235059392331843585?refer=embed">♬ Otra Vez - ProdMarvin</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="HB7" tabindex="-1" aria-labelledby="howToCookModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-m">
+              <div class="modal-content">
+                <div class="modal-header justify-content-between">
+                  <h5 class="modal-title text-warning" id="HB7">How to Make?</h5>
+                  <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@connhcruz/video/7089366855919340827" data-video-id="7089366855919340827" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@connhcruz" href="https://www.tiktok.com/@connhcruz?refer=embed">@connhcruz</a> Kids’ favorite <a title="milo" target="_blank" href="https://www.tiktok.com/tag/milo?refer=embed">#MILO</a> ice cream sandwich! 👍🏻 Perfect for the summer to give <a title="milosummerenergy" target="_blank" href="https://www.tiktok.com/tag/milosummerenergy?refer=embed">#MILOSummerEnergy</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#FYP</a> <a title="summerfoodie" target="_blank" href="https://www.tiktok.com/tag/summerfoodie?refer=embed">#summerfoodie</a> <a title="phoodtour" target="_blank" href="https://www.tiktok.com/tag/phoodtour?refer=embed">#phoodtour</a> <a title="foodtokph" target="_blank" href="https://www.tiktok.com/tag/foodtokph?refer=embed">#foodtokph</a> <a title="miloeveryday" target="_blank" href="https://www.tiktok.com/tag/miloeveryday?refer=embed">#MILOEveryday</a> #<a title="connhcruz" target="_blank" href="https://www.tiktok.com/tag/connhcruz?refer=embed">ConnhCruz </a>#<a title="eatsltd" target="_blank" href="https://www.tiktok.com/tag/eatsltd?refer=embed">EatsLTD</a> <a target="_blank" title="♬ original sound - Connh Cruz | Modern Nanay™ - Modern Nanay™" href="https://www.tiktok.com/music/original-sound-Connh-Cruz-Modern-Nanay™-7089366889192819482?refer=embed">♬ original sound - Connh Cruz | Modern Nanay™ - Modern Nanay™</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="HB8" tabindex="-1" aria-labelledby="howToCookModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-m">
+              <div class="modal-content">
+                <div class="modal-header justify-content-between">
+                  <h5 class="modal-title text-warning" id="HB8">How to Make?</h5>
+                  <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lokongkusinero/video/7338945947789004038" data-video-id="7338945947789004038" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@lokongkusinero" href="https://www.tiktok.com/@lokongkusinero?refer=embed">@lokongkusinero</a> Banana Ring <a title="negosyorecipe" target="_blank" href="https://www.tiktok.com/tag/negosyorecipe?refer=embed">#NegosyoRecipe</a> <a target="_blank" title="♬ original sound  - Lokong Kusinero" href="https://www.tiktok.com/music/original-sound-Lokong-Kusinero-7338946190053559046?refer=embed">♬ original sound  - Lokong Kusinero</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="footer-line text-light">
+        <footer class="bg-warning-subtle text-dark py-4">
+          <div class="container text-center">
+            <img src="FR_Images/NutriCravesLogo.png" alt="FDA" width="150" height="150">
+            <p><b>SHARIEN SALARDA | CHARLES CARILLO</b></p>
+              <p class="mb-2">&copy; 2025 NutriCraves. All rights reserved. <b>NutriCraves</b> is a health-focused food brand that offers nutritious, crave-worthy meals made with fresh, wholesome ingredients. It's all about satisfying your cravings the healthy way.</p>
+            </div>
+        </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+  </body>
+  </html>
