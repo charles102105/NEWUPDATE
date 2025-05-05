@@ -48,8 +48,17 @@
 .hover-pop:hover {
   transform: scale(1.1);
 }
-  </style>
-  </style>   
+.link-hover-warning {
+    color: #ffc107; /* Bootstrap text-dark color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .link-hover-warning:hover {
+    color: #212529; /* Bootstrap warning color */
+    text-decoration: underline;
+  }
+</style>   
     <body>
       <nav class="navbar navbar-expand-sm navbar-emphasis bg-warning-subtle py-3 sticky-top">
         <div class="container-fluid justify-content fw-bold">
@@ -72,13 +81,13 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item hover-black" href="TheCrunch.html">The Crunch</a></li>
-                    <li><a class="dropdown-item hover-black" href="Calle Cafe.html">Calle Coffee</a></li>
+                    <li><a class="dropdown-item hover-black" href="LavaCraze.html">Lava Craze</a></li>
                     <li><a class="dropdown-item hover-black" href="MugShot.html">MugShot</a></li>
                     <li><a class="dropdown-item hover-black" href="DocWings.html">Doc Wings</a></li>
                   </ul>
                 </li>
                <li class="nav-item">
-                <a class="nav-link active hover-black" href="Recipe.html">Food Recipe</a>
+                <a class="nav-link active hover-black" href="FOODRECIPES.html">Food Recipe</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active hover-black" href="FOODGUIDE.html">Food Guides</a>
@@ -111,11 +120,11 @@
   <div class="row">
     <div class="col-md-3">
       <div class="image-container">
-        <img src="FR_Images/MUGSHOT.jpg" alt="Image 1">
+        <img src="FR_Images/S1.jpg" alt="Image 1">
         <p>Description for image 1</p>
       </div>
       <div class="image-container">
-        <img src="FR_Images/MUGSHOTBARTENDER.jpg" alt="Image 2">
+        <img src="FR_Images/ST1.jpg" alt="Image 2">
         <p>Description for image 2</p>
       </div>
     </div>
@@ -127,46 +136,38 @@
     </div>
     
 </div>
-<section class="the-crunch text-warning text-start bg-emphasis">
+<section class="text-warning text-start bg-emphasis">
   <div class="container">
-    <h1 class="fw-bold text-start">EXPLORE THE RECIPES</h1>
-  </div>
+    <h1 class="fw-bold text-start">
+      <a href="FOODRECIPES.html" class="link-hover-warning">
+        EXPLORE THE RECIPES
+      </a>
+    </h1>
+      </div>
   </section>
   <div class="d-flex justify-content-center flex-wrap gap-5 text-center">
     <div>
-      <a href="Recipe.html">
-        <img src="FR_Images/cc1.jpg" class="rounded-circle hover-pop" alt="User 1" width="150" height="150">
-      </a>
-      <p class="mt-2">BREAKFAST</p>
+        <img src="FR_Images/CHOCOOAT.jpg" class="rounded-circle hover-pop" alt="User 1" width="150" height="150">
+          <p class="mt-2">BREAKFAST</p>
     </div>
     <div>
-      <a href="Recipe.html">
-        <img src="FR_Images/MSALAKING.jpg" class="rounded-circle hover-pop" alt="User 2" width="150" height="150">
-      </a>
-      <p class="mt-2">LUNCH</p>
+          <img src="FR_Images/CREAMYMUSHROOM.jpg" class="rounded-circle hover-pop" alt="User 2" width="150" height="150">
+            <p class="mt-2">LUNCH</p>
     </div>
     <div>
-      <a href="Recipe.html">
-        <img src="FR_Images/MSDRINK4.jpg" class="rounded-circle hover-pop" alt="User 3" width="150" height="150">
-      </a>
-      <p class="mt-2">BRUNCH</p>
+        <img src="FR_Images/BACONANDEGG.jpg" class="rounded-circle hover-pop" alt="User 3" width="150" height="150">
+       <p class="mt-2">BRUNCH</p>
     </div>
     <div>
-      <a href="Recipe.html">
-        <img src="FR_Images/cc2.jpg" class="rounded-circle hover-pop" alt="User 4" width="150" height="150">
-      </a>
-      <p class="mt-2">DINNER</p>
+        <img src="FR_Images/CREAMYGARLIC.jpg" class="rounded-circle hover-pop" alt="User 4" width="150" height="150">
+          <p class="mt-2">DINNER</p>
     </div>
     <div>
-      <a href="Recipe.html">
-        <img src="FR_Images/MSKIMCHI.jpg" class="rounded-circle hover-pop" alt="User 5" width="150" height="150">
-      </a>
-      <p class="mt-2">DRINKS</p>
+        <img src="FR_Images/OREOMILK.jpg" class="rounded-circle hover-pop" alt="User 5" width="150" height="150">
+         <p class="mt-2">DRINKS</p>
     </div>
     <div>
-      <a href="Recipe.html">
-        <img src="FR_Images/MSSNACKS1.jpg" class="rounded-circle hover-pop" alt="User 6" width="150" height="150">
-      </a>
+        <img src="FR_Images/MILOS.jpg" class="rounded-circle hover-pop" alt="User 6" width="150" height="150">
       <p class="mt-2">SNACKS</p>
     </div>
   </div>
