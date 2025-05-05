@@ -12,11 +12,19 @@
   .hover-black:hover {
     color: #ffc107 !important;
   }
+  .link-hover-underline {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .link-hover-underline:hover {
+    text-decoration: underline;
+  }
   </style>  
     <body>
       <nav class="navbar navbar-expand-sm navbar-emphasis bg-warning-subtle py-3 sticky-top">
         <div class="container-fluid justify-content fw-bold">
-          <img src="FR_Images/NC3.png" alt="FDA" width="100" height="50">
+          <img src="FR_Images/NC3.png" alt="FDA" width="90" height="40">
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +57,7 @@
                       Food Recipe
                     </a>
               <li class="nav-item active">
-                <a class="nav-link active hover-black" href="FOODGUIDE.html">Food Guides</a>
+                <a class="nav-link active hover-black" href="FOODGUIDE.html">Food Guide</a>
               </li>
             </ul>
           </div>
@@ -85,41 +93,58 @@
     </div>
     <section class=" the-crunch text-warning py-5 text-center bg-emphasis">
       <div class="container">
-        <h1 class="display-4 fw-bold">LAVA CRAZE</h1>
-        <p class="the-crunch text-dark lead mb-4"> <b>The Lava Craze</b> Lava Craze Coffee serves up rich, flavorful hot and iced coffee that's perfect for kickstarting your day or fueling your afternoon. With every cup brewed fresh, it’s your go-to spot for quality coffee in a cozy setting..</p>
+        <h1 class="display-1 fw-bold">Lava Craze</h1>
       </div>
     </section>
-    </div>
-        <section class="container my-5">
-        <div class="row">
-          <div class="col-md-6 the-crunch text-warning text-start">
-            <h1>Lava Craze</h1>
-            <h4 class="the-crunch text-dark">
-              A franchise business committed to providing a quality serving of flavored boneless fried chicken. We also offer Chicken Shots, Shots Bucket, Half Chicken, and Whole Chicken, available in different delicious flavors such as Classic, Honey Garlic, K-Style, Spicy K-Style, Teriyaki, Cheesy Bacon, and Texas BBQ.
-            </h4>
-          <h4>
-              Treat yourself to this tasty and flavorful boneless chicken at any of our 50+ locations in the country!
-            </h4>
-            <button class="btn btn-outline-warning mt-3" data-bs-toggle="modal" data-bs-target="#locationModal">View Location</button>
-          </div>
-          <div class="col-md-6">
-            <img src="FR_Images/LC3.jpg" alt="Delicious food overview" class="img-fluid rounded shadow mb-3">
-          </div>
+   
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-md-6 fw-bold the-crunch text-warning text-start">
+          <h1 class="fw-bold">Lava Craze</h1>
+          <h4 class="text-dark">
+            A franchise business committed to providing a quality serving of flavored boneless fried chicken.
+          </h4>
+          <h4 class="text-dark">
+            Founded by Joel & Kat, our goal is to share our unique style of tasty boneless fried chicken.
+          </h4>
+    
+          <button class="btn btn-outline-warning mt-3" data-bs-toggle="modal" data-bs-target="#locationModal">
+            View Location
+          </button>
+          <h2 class="fw-bold mt-4">Specialties:</h2>
+          <h5 class="text-dark">
+            We also offer here at the Lava Craze is those flavor boneless chicken.
+          <ul class="text-dark">
+            <li>Unique Interior</li>
+            <li>Customize Drinks of your choice</li>
+            <li>BANALAVA Drink series</li>
+          </ul>
+          </h5>
         </div>
-      </section>
-      
-      <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-dark" id="locationModalLabel">The Crunch South Branch</h5>
-              <button type="button text-end" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+        <div class="col-md-6">
+          <img src="FR_Images/LC3.jpg" alt="Delicious food overview" class="img-fluid rounded shadow mb-3">
+        </div>
+      </div>
+    </section>
+    
+    
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-between align-items-center">
+            <h5 class="modal-title text-dark" id="locationModalLabel">Lava Craze</h5>
+            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ratio ratio-16x9">
+              <iframe 
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.7448381092395!2d120.58399047546887!3d15.172351485384628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396ed795409cef1%3A0xa0bfdf4c407a8f00!2sLava%20Craze!5e0!3m2!1sen!2sph!4v1746457944866!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
             </div>
-            <div class="modal-body p-0">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.7448381092395!2d120.58399047546887!3d15.172351485384628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396ed795409cef1%3A0xa0bfdf4c407a8f00!2sLava%20Craze!5e0!3m2!1sen!2sph!4v1746433374579!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
           </div>
         </div>
       </div>
+    </div>
           <hr class="footer-line text-light" id="What Food">
       </section>
     
@@ -135,7 +160,7 @@
             <div class="card h-100 border-warning">
               <img src="FR_Images/LAVAWARMA.jpg" class="card-img-top" alt="Honey Garlic">
               <div class="card-body">
-                <h5 class="card-title">The Crunch Main Dish</h5>
+                <h5 class="card-title">Lava Craze Main Dish</h5>
                 <p class="card-text">Sweet and savory with garlic flavor.</p>
                 <a href="#MAIN" class="btn btn-outline-warning btn-m">View Main Dish</a>
               </div>
@@ -165,19 +190,20 @@
         </div>
       </section>
       <hr class="footer-line text-light" id="MAIN">
-      <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+      <section class="text-warning py-5 text-start bg-emphasis">
         <div class="container">
           <h1 class="display-4 fw-bold mb-4 mt-4">Lava Craze Main Meal</h1>
           <p class="the-crunch text-dark lead mb-4">
-            This are the Main Dish of The Crunch. Serves a Boneless Chicken with different flavors of sauce that you can try.
+            This is the Main Meal of Lava Craze that make your tummy feel gained.
           </p>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100 border-warning">
                 <img src="FR_Images/LAVAWARMA.jpg" class="card-img-top" alt="Honey Garlic">
                 <div class="card-body">
-                  <h5 class="card-title">Honey Garlic</h5>
-                  <p class="card-text">Sweet and savory boneless chicken with garlic flavor.</p>
+                  <h5 class="card-title">LAVAWARMA</h5>
+                  <p class="card-text">Shawarma-style rice dish packed with flavor.
+                  </p>
                 </div>
               </div>
             </div>
@@ -185,8 +211,8 @@
               <div class="card h-100 border-warning">
                 <img src="FR_Images/CRAZYCARBONARA.jpg" class="card-img-top" alt="Buffalo">
                 <div class="card-body">
-                  <h5 class="card-title">Buffalo</h5>
-                  <p class="card-text">Classic spicy wing-style chicken.</p>
+                  <h5 class="card-title">CRAZY CARBONARA</h5>
+                  <p class="card-text">Creamy carbonara pasta served with garlic bread.</p>
                 </div>
               </div>
             </div>
@@ -194,8 +220,8 @@
               <div class="card h-100 border-warning">
                 <img src="FR_Images/CRAZYTUNAPESTO.jpg" class="card-img-top" alt="BBQ">
                 <div class="card-body">
-                  <h5 class="card-title">BBQ</h5>
-                  <p class="card-text">Smoky, sweet, and tangy BBQ boneless chicken.</p>
+                  <h5 class="card-title">CRAZY TUNA PESTO</h5>
+                  <p class="card-text">Savory tuna pesto pasta paired with garlic bread.</p>
                 </div>
               </div>
             </div>
@@ -203,17 +229,17 @@
         </div>
       </section>
     <hr class="footer-line text-light" id="Drinks">
-    <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+    <section class="text-warning py-5 text-start bg-emphasis">
       <div class="container">
-        <h1 class="display-4 fw-bold mb-4 mt-4">Drinks</h1>
-        <p class="the-crunch text-dark lead mb-4">This are the Main Dish of The Crunch. Serves a Boneless Chicken with different flavors of sauce that you can try.</p>
+        <h1 class="display-4 fw-bold mb-4 mt-4">Lava Craze Drinks</h1>
+        <p class="text-dark lead mb-4">This are the different special drinks serve of Lava Craze with Sweet and Smoothy delicous flavorful.</p>
         <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
           <div class="col">
             <div class="card border-warning h-100">
               <img src="FR_Images/PUDDINGCHOCO.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Honey Garlic</h5>
-                <p class="card-text">Sweet and savory boneless Korean chicken glazed with honey garlic.</p>
+                <h5 class="card-title">BANALAVA CHOCO PUDDING</h5>
+                <p class="card-text">Creamy chocolate drink with pudding layers.</p>
               </div>
             </div>
           </div>
@@ -221,8 +247,8 @@
             <div class="card border-warning h-100">
               <img src="FR_Images/PUDDINGLATTE.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">K-Style</h5>
-                <p class="card-text">A bold Korean-style chicken packed with traditional flavors and heat.</p>
+                <h5 class="card-title">BANALAVA LATTE PUDDING</h5>
+                <p class="card-text">Smooth latte with soft pudding at the bottom.</p>
               </div>
             </div>
           </div>
@@ -230,8 +256,8 @@
             <div class="card border-warning h-100">
               <img src="FR_Images/PUDDINGMATCHA.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Teriyaki</h5>
-                <p class="card-text">Tender chicken coated in a rich and tangy teriyaki glaze.</p>
+                <h5 class="card-title">BANALAVA MATCHA PUDDING</h5>
+                <p class="card-text">Earthy matcha drink with pudding.</p>
               </div>
             </div>
           </div>
@@ -239,8 +265,8 @@
             <div class="card border-warning h-100">
               <img src="FR_Images/CRAZYLAVALECHE.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Cheesy Bacon</h5>
-                <p class="card-text">Crispy chicken topped with melted cheese and smoky bacon bits.</p>
+                <h5 class="card-title">CRAZY LAVA LECHE</h5>
+                <p class="card-text">Coffee-based drink topped with rich leche flan.</p>
               </div>
             </div>
           </div>
@@ -248,8 +274,8 @@
             <div class="card border-warning h-100">
               <img src="FR_Images/LCBISCOFFCRAZE.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Blue Lemonade</h5>
-                <p class="card-text">A refreshing and zesty blue lemonade to quench your thirst.</p>
+                <h5 class="card-title">BISCOFF CRAZE</h5>
+                <p class="card-text">Biscoff-flavored drink with ice cream and biscuit topping.</p>
               </div>
             </div>
           </div>
@@ -257,8 +283,8 @@
             <div class="card border-warning h-100">
               <img src="FR_Images/LCSTRAWBERRY.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Iced Tea</h5>
-                <p class="card-text">Classic chilled iced tea with a sweet twist.</p>
+                <h5 class="card-title">STRAWBERRY CHEESECAKE</h5>
+                <p class="card-text">Sweet, creamy drink with a cheesecake twist.</p>
               </div>
             </div>
           </div>
@@ -268,19 +294,19 @@
     </section>
     
     <hr class="footer-line text-light" id="Snacks">
-    <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+    <section class="the-crunch text-warning py-5 text-start bg-emphasis">
       <div class="container">
         <h1 class="display-4 fw-bold mb-4 mt-4">Snacks</h1>
         <p class="the-crunch text-dark lead mb-4">
-          This are the Main Dish of The Crunch. Serves a Boneless Chicken with different flavors of sauce that you can try.
+          This are the snacks of Lava Craze. That you can try with different choices of sides you can choose.
         </p> 
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100 border-warning">
               <img src="FR_Images/LCBISCOFF.jpg" class="card-img-top" alt="Honey Garlic">
               <div class="card-body">
-                <h5 class="card-title">Honey Garlic</h5>
-                <p class="card-text">Sweet and savory boneless Korean chicken glazed with honey garlic.</p>
+                <h5 class="card-title">BISCOFF CHEESECAKE</h5>
+                <p class="card-text">Rich and creamy cheesecake with Biscoff flavor.</p>
               </div>
             </div>
           </div>
@@ -288,8 +314,8 @@
             <div class="card h-100 border-warning">
               <img src="FR_Images/LCSANDWHICH.jpg" class="card-img-top" alt="K-Style">
               <div class="card-body">
-                <h5 class="card-title">K-Style</h5>
-                <p class="card-text">A bold Korean-style chicken packed with traditional flavors and heat.</p>
+                <h5 class="card-title">LAVA SANDWHICH</h5>
+                <p class="card-text">Toasted sandwich with a melty, flavorful filling.</p>
               </div>
             </div>
           </div>
@@ -297,8 +323,8 @@
             <div class="card h-100 border-warning">
               <img src="FR_Images/LCNACHOS.jpg" class="card-img-top" alt="Teriyaki">
               <div class="card-body">
-                <h5 class="card-title">Teriyaki</h5>
-                <p class="card-text">Tender chicken coated in a rich and tangy teriyaki glaze.</p>
+                <h5 class="card-title">CRAZY TACOS</h5>
+                <p class="card-text">Flavor-packed tacos with a fun twist.</p>
               </div>
             </div>
           </div>
@@ -407,14 +433,62 @@
       </div>
     </div>
     </section>
-      <footer class="bg-warning-subtle text-dark py-4">
-        <div class="container text-center">
-          <img src="FR_Images/NutriCravesLogo.png" alt="FDA" width="150" height="150">
-          <p><b>SHARIEN SALARDA | CHARLES CARILLO</b></p>
-            <p class="mb-2">&copy; 2025 NutriCraves. All rights reserved. <b>NutriCraves</b> is a health-focused food brand that offers nutritious, crave-worthy meals made with fresh, wholesome ingredients. It's all about satisfying your cravings the healthy way.</p>
+    <footer class="bg-warning-subtle text-dark py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
+            <img src="FR_Images/NutriCravesLogo.png" alt="NutriCraves Logo" width="150" height="120" class="img-fluid">
           </div>
-      </footer>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <h5>ABOUT US</h5>
+                <ul class="list-unstyled">
+                  <li><b>Sharien Salarda | Charles Carillo</b></li>
+                  <li>At your service with NutriCraves</li>
+                  <li>
+                    <a href="contact.html" class="link-hover-underline">
+                      <i class="bi bi-envelope-fill me-1"></i>Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 mb-3">
+                <h5>RESTAURANTS SOCIAL MEDIA</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.facebook.com/thecrunchsouthcaloocan" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>The Crunch
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/MugShotKape" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>MugShot
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/lavacrazeph" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>Lava Craze
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/docwings" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>Doc Wings
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-secondary">
+        <p class="small text-center">
+          NutriCraves Food Guide Disclaimer: This information is for educational purposes only and not a substitute for medical advice. Please consult a healthcare professional for personalized nutrition guidance.
+        </p>
+        <p class="mb-0 mt-2 text-center">&copy; 2025 NutriCraves.All rights reserved</p>
+      </div>
+    </footer>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

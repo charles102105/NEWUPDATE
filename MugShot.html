@@ -12,11 +12,19 @@
   .hover-black:hover {
     color: #ffc107 !important;
   }
+  .link-hover-underline {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .link-hover-underline:hover {
+    text-decoration: underline;
+  }
   </style>  
     <body>
       <nav class="navbar navbar-expand-sm navbar-emphasis bg-warning-subtle py-3 sticky-top">
         <div class="container-fluid justify-content fw-bold">
-          <img src="FR_Images/NC3.png" alt="FDA" width="100" height="50">
+          <img src="FR_Images/NC3.png" alt="FDA" width="90" height="40">
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,13 +51,11 @@
                     <li><a class="dropdown-item hover-black" href="DocWings.html">Doc Wings</a></li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link active hover-black" href="Recipe.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Food Recipe
-                    </a>
+                <li class="nav-item active">
+                  <a class="nav-link active hover-black" href="FOODRECIPES.html">Food Recipe</a>
+                </li>
               <li class="nav-item active">
-                <a class="nav-link active hover-black" href="FOODGUIDE.html">Food Guides</a>
+                <a class="nav-link active hover-black" href="FOODGUIDE.html">Food Guide</a>
               </li>
             </ul>
           </div>
@@ -85,45 +91,60 @@
     </div>
     <section class=" the-crunch text-warning py-5 text-center bg-emphasis">
       <div class="container">
-        <h1 class="display-4 fw-bold">MUGSHOT</h1>
-        <p class="the-crunch text-dark lead mb-4"> <b>The MugShot Coffee</b> Mugshot Coffee serves up rich, flavorful hot and iced coffee that’s perfect for kickstarting your day or fueling your afternoon. With every cup brewed fresh, it’s your go-to spot for quality coffee in a cozy setting..</p>
+        <h1 class="display-1 fw-bold">MugShot</h1>
       </div>
     </section>
     </div>
-        <section class="container my-5">
-        <div class="row">
-          <div class="col-md-6 the-crunch text-warning text-start">
-            <h1>MugShot</h1>
-            <h4 class="the-crunch text-dark">
-              A franchise business committed to providing a quality serving of flavored boneless fried chicken. We also offer Chicken Shots, Shots Bucket, Half Chicken, and Whole Chicken, available in different delicious flavors such as Classic, Honey Garlic, K-Style, Spicy K-Style, Teriyaki, Cheesy Bacon, and Texas BBQ.
-            </h4>
-          <h4>
-              Treat yourself to this tasty and flavorful boneless chicken at any of our 50+ locations in the country!
-            </h4>
-            <button class="btn btn-outline-warning mt-3" data-bs-toggle="modal" data-bs-target="#locationModal">View Location</button>
-          </div>
-          <div class="col-md-6">
-            <img src="FR_Images/MUGSHOT3.jpg" alt="Delicious food overview" class="img-fluid rounded shadow mb-3">
-          </div>
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-md-6 fw-bold the-crunch text-warning text-start">
+          <h1 class="fw-bold">Lava Craze</h1>
+          <h4 class="text-dark">
+            A franchise business committed to providing a quality serving of flavored boneless fried chicken.
+          </h4>
+          <h4 class="text-dark">
+            Founded by Joel & Kat, our goal is to share our unique style of tasty boneless fried chicken.
+          </h4>
+          <button class="btn btn-outline-warning mt-3" data-bs-toggle="modal" data-bs-target="#locationModal">
+            View Location
+          </button>
+    
+          <h2 class="fw-bold mt-4 text-dark">Specialties:</h2>
+          <p class="text-dark">
+            We also offer flavor-packed boneless chicken here at Lava Craze, along with:
+          </p>
+          <ul class="text-dark">
+            <li>Unique Interior</li>
+            <li>Customized Drinks of Your Choice</li>
+            <li>BANALAVA Drink Series</li>
+          </ul>
         </div>
-      </section>
-      
-      <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-dark" id="locationModalLabel">The Crunch South Branch</h5>
-              <button type="button text-start" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-            </div>
-            <div class="modal-body p-0">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.963963358873!2d120.97518797545956!3d14.657986585835188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b5465149da53%3A0x2359f0799f08ac29!2sMugShot%20Coffee!5e0!3m2!1sen!2sph!4v1746123450241!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+    
+        <div class="col-md-6">
+          <img src="FR_Images/MUGSHOT3.jpg" alt="Delicious food overview" class="img-fluid rounded shadow mb-3">
+        </div>
+      </div>
+    </section>
+    
+    
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-between align-items-center">
+            <h5 class="modal-title text-dark" id="locationModalLabel">MugShot</h5>
+            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ratio ratio-16x9">
+              <iframe 
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.963963358873!2d120.97518797545953!3d14.657986585835188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b5465149da53%3A0x2359f0799f08ac29!2sMugShot%20Coffee!5e0!3m2!1sen!2sph!4v1746458502244!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">            
+              </iframe>
+              </div>
           </div>
         </div>
       </div>
-        
-          <hr class="footer-line text-warning" id="What Food">
-      </section>
-    
+    </div>
+        <hr class="footer-line text-light" id="What Food">
       <section class="the-crunch text-warning py-5 text-center bg-emphasis">
         <div class="container">
           <h1 class="display-4 fw-bold mt-4">MugShot Foods, Snacks and Drinks</h1>
@@ -165,8 +186,8 @@
         </div>
         </div>
       </section>
-      <hr class="footer-line text-warning" id="MAIN">
-      <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+      <hr class="footer-line text-light" id="MAIN">
+      <section class="the-crunch text-warning py-5 text-start bg-emphasis">
         <div class="container">
           <h1 class="display-4 fw-bold mb-4 mt-4">MugShot Rice Meal</h1>
           <p class="the-crunch text-dark lead mb-4">
@@ -177,8 +198,8 @@
               <div class="card h-100 border-warning">
                 <img src="FR_Images/MSALAKING.jpg" class="card-img-top" alt="Honey Garlic">
                 <div class="card-body">
-                  <h5 class="card-title">Honey Garlic</h5>
-                  <p class="card-text">Sweet and savory boneless chicken with garlic flavor.</p>
+                  <h5 class="card-title">ALAKING</h5>
+                  <p class="card-text">Savory dish with a royal twist, served over rice.</p>
                 </div>
               </div>
             </div>
@@ -186,8 +207,8 @@
               <div class="card h-100 border-warning">
                 <img src="FR_Images/MSKIMCHI.jpg" class="card-img-top" alt="Buffalo">
                 <div class="card-body">
-                  <h5 class="card-title">Buffalo</h5>
-                  <p class="card-text">Classic spicy wing-style chicken.</p>
+                  <h5 class="card-title">KIMCHI RICE</h5>
+                  <p class="card-text">Spicy and tangy fried rice with kimchi.</p>
                 </div>
               </div>
             </div>
@@ -195,8 +216,8 @@
               <div class="card h-100 border-warning">
                 <img src="FR_Images/MSLIEMPO.jpg" class="card-img-top" alt="BBQ">
                 <div class="card-body">
-                  <h5 class="card-title">BBQ</h5>
-                  <p class="card-text">Smoky, sweet, and tangy BBQ boneless chicken.</p>
+                  <h5 class="card-title">LIEMPO</h5>
+                  <p class="card-text">Grilled pork belly, juicy and flavorful.</p>
                 </div>
               </div>
             </div>
@@ -204,8 +225,8 @@
               <div class="card h-100 border-warning">
                 <img src="FR_Images/MSTAPA.jpg" class="card-img-top" alt="Cheesy Bacon">
                 <div class="card-body">
-                  <h5 class="card-title">Cheesy Bacon</h5>
-                  <p class="card-text">Creamy cheese sauce with crispy bacon on chicken.</p>
+                  <h5 class="card-title">TAPA</h5>
+                  <p class="card-text">Classic Filipino-style marinated beef.</p>
                 </div>
               </div>
             </div>
@@ -213,8 +234,8 @@
               <div class="card h-100 border-warning">
                 <img src="FR_Images/MSSISIG.jpg" class="card-img-top" alt="K-Style">
                 <div class="card-body">
-                  <h5 class="card-title">K-Style</h5>
-                  <p class="card-text">Traditional Korean-style fried chicken.</p>
+                  <h5 class="card-title">SISIG</h5>
+                  <p class="card-text">Crispy chopped pork with bold Filipino flavor.</p>
                 </div>
               </div>
             </div>
@@ -222,100 +243,16 @@
               <div class="card h-100 border-warning">
                 <img src="FR_Images/MSTOCINO.jpg" class="card-img-top" alt="Teriyaki">
                 <div class="card-body">
-                  <h5 class="card-title">Teriyaki</h5>
-                  <p class="card-text">Tangy teriyaki-glazed chicken dish.</p>
+                  <h5 class="card-title">TOCINO</h5>
+                  <p class="card-text">Sweet and savory tocino rice meal.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="modal fade" id="M1" tabindex="-1" aria-labelledby="M1Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M1Label">Honey Garlic</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/MSALAKING.jpg" class="img-fluid rounded mb-3" alt="Honey Garlic">
-                <p>Flavorful boneless chicken glazed with honey and garlic—sweet and satisfying.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="M2" tabindex="-1" aria-labelledby="M2Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M2Label">Buffalo</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/MSKIMCHI.jpg" class="img-fluid rounded mb-3" alt="Buffalo">
-                <p>Classic buffalo-style chicken—spicy, bold, and always a favorite.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="M3" tabindex="-1" aria-labelledby="M3Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M3Label">BBQ</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/MSLIEMPO.jpg" class="img-fluid rounded mb-3" alt="BBQ">
-                <p>Boneless chicken with a rich, smoky barbecue sauce—sweet, tangy, and bold.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="M4" tabindex="-1" aria-labelledby="M4Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M4Label">Cheesy Bacon</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/MSTAPA.jpg" class="img-fluid rounded mb-3" alt="Cheesy Bacon">
-                <p>Creamy cheese and crispy bacon top off this indulgent chicken dish.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="M5" tabindex="-1" aria-labelledby="M5Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M5Label">K-Style</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/MSSISIG.jpg" class="img-fluid rounded mb-3" alt="K-Style">
-                <p>Inspired by Korean cuisine, this chicken is spicy, savory, and deliciously crisp.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="M6" tabindex="-1" aria-labelledby="M6Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M6Label">Teriyaki</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/MSTOCINO.jpg" class="img-fluid rounded mb-3" alt="Teriyaki">
-                <p>Succulent chicken glazed in a rich teriyaki sauce—perfectly balanced sweetness and umami.</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
-    <hr class="footer-line text-warning" id="Drinks">
-    <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+    <hr class="footer-line text-light" id="Drinks">
+    <section class="the-crunch text-warning py-5 text-start bg-emphasis">
       <div class="container">
         <h1 class="display-4 fw-bold mb-4 mt-4">Drinks</h1>
         <p class="the-crunch text-dark lead mb-4">This are the Main Dish of The Crunch. Serves a Boneless Chicken with different flavors of sauce that you can try.</p>
@@ -324,8 +261,8 @@
             <div class="card border-warning h-100">
               <img src="FR_Images/MSDRINK1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Honey Garlic</h5>
-                <p class="card-text">Sweet and savory boneless Korean chicken glazed with honey garlic.</p>
+                <h5 class="card-title">STRAWBERRY FRAPPE</h5>
+                <p class="card-text">Sweet, icy strawberry blend.</p>
               </div>
             </div>
           </div>
@@ -333,8 +270,8 @@
             <div class="card border-warning h-100">
               <img src="FR_Images/MSDRINK2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">K-Style</h5>
-                <p class="card-text">A bold Korean-style chicken packed with traditional flavors and heat.</p>
+                <h5 class="card-title">ICED LATTE</h5>
+                <p class="card-text">Chilled coffee with creamy milk.</p>
               </div>
             </div>
           </div>
@@ -342,8 +279,8 @@
             <div class="card border-warning h-100">
               <img src="FR_Images/MSDRINK3.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Teriyaki</h5>
-                <p class="card-text">Tender chicken coated in a rich and tangy teriyaki glaze.</p>
+                <h5 class="card-title">ICED CARAMLE LATTE</h5>
+                <p class="card-text">Smooth coffee with a caramel kick.</p>
               </div>
             </div>
           </div>
@@ -351,8 +288,8 @@
             <div class="card border-warning h-100">
               <img src="FR_Images/MSDRINK4.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Cheesy Bacon</h5>
-                <p class="card-text">Crispy chicken topped with melted cheese and smoky bacon bits.</p>
+                <h5 class="card-title">ICED TEA</h5>
+                <p class="card-text">Cool and refreshing brewed tea.</p>
               </div>
             </div>
           </div>
@@ -360,8 +297,8 @@
             <div class="card border-warning h-100">
               <img src="FR_Images/MUGSHOTMATCHA.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Blue Lemonade</h5>
-                <p class="card-text">A refreshing and zesty blue lemonade to quench your thirst.</p>
+                <h5 class="card-title">MATCHA FRAPPE</h5>
+                <p class="card-text">Creamy and earthy iced matcha drink.</p>
               </div>
             </div>
           </div>
@@ -369,8 +306,8 @@
             <div class="card border-warning h-100">
               <img src="FR_Images/MUGSHOTKIWI.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Iced Tea</h5>
-                <p class="card-text">Classic chilled iced tea with a sweet twist.</p>
+                <h5 class="card-title">KIWI SODA</h5>
+                <p class="card-text">Sweet and tangy kiwi refreshment.</p>
               </div>
             </div>
           </div>
@@ -378,8 +315,8 @@
       </div>
     </section>
     
-    <hr class="footer-line text-warning" id="Snacks">
-    <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+    <hr class="footer-line text-light" id="Snacks">
+    <section class="the-crunch text-warning py-5 text-start bg-emphasis">
       <div class="container">
         <h1 class="display-4 fw-bold mb-4 mt-4">Snacks</h1>
         <p class="the-crunch text-dark lead mb-4">
@@ -390,8 +327,8 @@
             <div class="card h-100 border-warning">
               <img src="FR_Images/MSSNACKS.jpg" class="card-img-top" alt="Honey Garlic">
               <div class="card-body">
-                <h5 class="card-title">Honey Garlic</h5>
-                <p class="card-text">Sweet and savory boneless Korean chicken glazed with honey garlic.</p>
+                <h5 class="card-title">TOAST BREAD WITH POTATO FIRES</h5>
+                <p class="card-text">Crispy toast paired with golden fries.</p>
               </div>
             </div>
           </div>
@@ -399,8 +336,8 @@
             <div class="card h-100 border-warning">
               <img src="FR_Images/MSSNACKS1.jpg" class="card-img-top" alt="K-Style">
               <div class="card-body">
-                <h5 class="card-title">K-Style</h5>
-                <p class="card-text">A bold Korean-style chicken packed with traditional flavors and heat.</p>
+                <h5 class="card-title">WAFFLE WITH CHOCOLATE SYRUP</h5>
+                <p class="card-text">Warm waffle with rich chocolate flavor.</p>
               </div>
             </div>
           </div>
@@ -408,8 +345,8 @@
             <div class="card h-100 border-warning">
               <img src="FR_Images/MSSNACKS2.jpg" class="card-img-top" alt="Teriyaki">
               <div class="card-body">
-                <h5 class="card-title">Teriyaki</h5>
-                <p class="card-text">Tender chicken coated in a rich and tangy teriyaki glaze.</p>
+                <h5 class="card-title">PANCAKE</h5>
+                <p class="card-text">Soft and fluffy classic pancake.</p>
               </div>
             </div>
           </div>
@@ -417,8 +354,8 @@
             <div class="card h-100 border-warning">
               <img src="FR_Images/MSSNACKS3.jpg" class="card-img-top" alt="Cheesy Bacon">
               <div class="card-body">
-                <h5 class="card-title">Cheesy Bacon</h5>
-                <p class="card-text">Crispy chicken topped with melted cheese and smoky bacon bits.</p>
+                <h5 class="card-title">CHEESY POTATO FRIES</h5>
+                <p class="card-text">Crispy fries smothered in cheese.</p>
               </div>
             </div>
           </div>
@@ -426,8 +363,8 @@
             <div class="card h-100 border-warning">
               <img src="FR_Images/MUGSHOTPOTATOFRIES.jpg" class="card-img-top" alt="Buffalo">
               <div class="card-body">
-                <h5 class="card-title">Buffalo</h5>
-                <p class="card-text">Tangy and spicy Buffalo chicken—perfect for heat lovers.</p>
+                <h5 class="card-title">POTATO FRIES</h5>
+                <p class="card-text">Classic golden fries, perfectly crisped.</p>
               </div>
             </div>
           </div>
@@ -435,8 +372,8 @@
             <div class="card h-100 border-warning">
               <img src="FR_Images/MUGSHOTCHICKENSANDWHICH.jpg" class="card-img-top" alt="Soy Garlic">
               <div class="card-body">
-                <h5 class="card-title">Soy Garlic</h5>
-                <p class="card-text">Savory chicken infused with the classic mix of soy sauce and garlic.</p>
+                <h5 class="card-title">CHICKEN SANDWHICH</h5>
+                <p class="card-text">Juicy chicken in a soft sandwich bun.</p>
               </div>
             </div>
           </div>
@@ -628,14 +565,62 @@
       </div>
     </div>
     </section>
-      <footer class="bg-warning-subtle text-dark py-4">
-        <div class="container text-center">
-          <img src="FR_Images/NutriCravesLogo.png" alt="FDA" width="150" height="150">
-          <p><b>SHARIEN SALARDA | CHARLES CARILLO</b></p>
-            <p class="mb-2">&copy; 2025 NutriCraves. All rights reserved. <b>NutriCraves</b> is a health-focused food brand that offers nutritious, crave-worthy meals made with fresh, wholesome ingredients. It's all about satisfying your cravings the healthy way.</p>
+    <footer class="bg-warning-subtle text-dark py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
+            <img src="FR_Images/NutriCravesLogo.png" alt="NutriCraves Logo" width="150" height="120" class="img-fluid">
           </div>
-      </footer>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <h5>ABOUT US</h5>
+                <ul class="list-unstyled">
+                  <li><b>Sharien Salarda | Charles Carillo</b></li>
+                  <li>At your service with NutriCraves</li>
+                  <li>
+                    <a href="contact.html" class="link-hover-underline">
+                      <i class="bi bi-envelope-fill me-1"></i>Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 mb-3">
+                <h5>RESTAURANTS SOCIAL MEDIA</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.facebook.com/thecrunchsouthcaloocan" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>The Crunch
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/MugShotKape" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>MugShot
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/lavacrazeph" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>Lava Craze
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/docwings" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>Doc Wings
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-secondary">
+        <p class="small text-center">
+          NutriCraves Food Guide Disclaimer: This information is for educational purposes only and not a substitute for medical advice. Please consult a healthcare professional for personalized nutrition guidance.
+        </p>
+        <p class="mb-0 mt-2 text-center">&copy; 2025 NutriCraves.All rights reserved</p>
+      </div>
+    </footer>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

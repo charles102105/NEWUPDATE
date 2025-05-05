@@ -12,11 +12,19 @@
   .hover-black:hover {
     color: #ffc107 !important;
   }
+  .link-hover-underline {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .link-hover-underline:hover {
+    text-decoration: underline;
+  }
   </style>  
     <body>
       <nav class="navbar navbar-expand-sm navbar-emphasis bg-warning-subtle py-3 sticky-top">
         <div class="container-fluid justify-content fw-bold">
-          <img src="FR_Images/NC3.png" alt="FDA" width="100" height="50">
+          <img src="FR_Images/NC3.png" alt="FDA" width="90" height="40">
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +55,7 @@
                   <a class="nav-link active hover-black"  aria-current="page" href="Recipe.html">Food Recipe</a>
                 </li>
                 <li class="nav-item active">
-                <a class="nav-link active hover-black" href="FOODGUIDE.html">Food Guides</a>
+                <a class="nav-link active hover-black" href="FOODGUIDE.html">Food Guide</a>
               </li>
             </ul>
           </div>
@@ -83,25 +91,43 @@
     </div>
     <section class=" the-crunch text-warning py-5 text-center bg-emphasis">
       <div class="container">
-        <h1 class="display-4 fw-bold">The Crunch</h1>
-        <p class="the-crunch text-dark lead mb-4"> <b>The Crunch</b> serves up crispy, saucy boneless Korean chicken that's bold, addictive, and totally crave-worthy.</p>
+        <h1 class="display-1 fw-bold">The Crunch</h1>
       </div>
     </section>
     </div>
          <section class="container my-5">
         <div class="row">
-          <div class="col-md-6 the-crunch text-warning text-start">
-            <h1>The Crunch</h1>
-            <h4 class="the-crunch text-dark">
-              A franchise business committed to providing a quality serving of flavored boneless fried chicken. We also offer Chicken Shots, Shots Bucket, Half Chicken, and Whole Chicken, available in different delicious flavors such as Classic, Honey Garlic, K-Style, Spicy K-Style, Teriyaki, Cheesy Bacon, and Texas BBQ.
-            </h4>
-          <h4>
-              Treat yourself to this tasty and flavorful boneless chicken at any of our 50+ locations in the country!
-            </h4>
+          <div class="col-md-6 fw-bold the-crunch text-warning text-start">
+            <h1 class="fw-bold">The Crunch</h1>
+            <h4 class="text-dark">
+              A franchise business committed to providing a quality serving of flavored boneless fried chicken. </h4>
+            <h4 class="text-dark">Founded by Joel & Kat, our goal is to share our unique style of tasty boneless fried chicken. </h4>
             <button class="btn btn-outline-warning mt-3" data-bs-toggle="modal" data-bs-target="#locationModal">View Location</button>
+
+            <h2 class="fw-bold mt-2">Specialties:</h2>
+            <h5 class="text-dark">
+              We also offer here at the crunch is those flavor boneless chicken.
+              <ul>
+                <li>Chicken Shots</li>
+                <li>Shots Bucket</li>
+                <li>Half Chicken</li>
+                <li>Whole Chicken</li>
+                <li>Available Flavors:
+                  <ul>
+                    <li>Classic</li>
+                    <li>Honey Garlic</li>
+                    <li>K-Style</li>
+                    <li>Spicy K-Style</li>
+                    <li>Teriyaki</li>
+                    <li>Cheesy Bacon</li>
+                    <li>Texas BBQ</li>
+                  </ul>
+                </li>
+              </ul>
+            </h5>
           </div>
           <div class="col-md-6">
-            <img src="FR_Images/TC5.jpg" alt="Delicious food overview" class="img-fluid rounded shadow mb-3">
+            <img src="FR_Images/founder1.jpg" alt="Delicious food overview" class="img-fluid rounded shadow mb-3">
           </div>
         </div>
       </section>
@@ -109,9 +135,9 @@
       <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header d-flex justify-content-between align-items-center">
               <h5 class="modal-title text-dark" id="locationModalLabel">The Crunch South Branch</h5>
-              <button type="button text-end" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
             </div>
             <div class="modal-body p-0">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.9672373496637!2d120.97323637545941!3d14.65780078583534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b5d97a436e0d%3A0x9dc58ddaf7c229d3!2sThe%20Crunch%20-%20Caloocan!5e0!3m2!1sen!2sph!4v1746073975609!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -119,24 +145,112 @@
           </div>
         </div>
       </div>
-        <section class="container my-5">
-          <div class="row">
-              <div class="col-md-6 ">
-                  <img src="FR_Images/founder1.jpg" alt="Delicious food overview" class="img-fluid rounded shadow">
+      <section class="the-crunch text-warning py-5 bg-emphasis">
+        <div class="container">
+          <h1 class="fw-bold text-start">Customers Review</h1>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-4 justify-content-center">
+            <div class="col">
+              <div class="card p-3 h-100">
+                <div class="d-flex align-items-start">
+                  <img src="FR_Images/woman (1).png" alt="Profile" class="rounded-circle me-3" width="50" height="50">
+                  <div>
+                    <h6 class="mb-0">
+                      <strong><a href="#" class="text-decoration-none text-danger">Mika Malacansa</a></strong> reviewed 
+                      <a href="#" class="text-decoration-none text-danger">The Crunch</a>
+                    </h6>
+                    <div class="text-warning my-1">★★★ 3.0</div>
+                    <p class="mb-1">Felix, this was the first time I ever made a kidney bean salad...</p>
+                    <img src="FR_Images/R1.jpg" alt="Review" class="img-fluid mb-2" style="max-width: 150px;">
+                    <div class="d-flex justify-content-between text-muted small">
+                      <span>2 HOURS AGO</span>
+                      <div>
+                        <a href="#" class="text-decoration-none me-2">REPLY</a>
+                        <span class="text-danger">♥</span> <span>6</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-               <div class="col-md-6 the-crunch text-warning text-start">
-                  <h1>The Crunch Co-Founder</h1>
-                  <h3 class="the-crunch text-dark">
-                    Founded by Joel & Kat, our goal is to share our unique style of tasty boneless fried chicken.
-                  </h3>
+            </div>
+            <div class="col">
+              <div class="card p-3 h-100">
+                <div class="d-flex align-items-start">
+                  <img src="FR_Images/man.png" alt="Profile" class="rounded-circle me-3" width="50" height="50">
+                  <div>
+                    <h6 class="mb-0">
+                      <strong><a href="#" class="text-decoration-none text-danger">Emilio Deaz</a></strong> reviewed 
+                      <a href="#" class="text-decoration-none text-danger">Calle Cafe</a>
+                    </h6>
+                    <div class="text-warning my-1">★★★★★ 5.0</div>
+                    <p class="mb-1">Felix, this was the first time I ever made a kidney bean salad...</p>
+                    <img src="FR_Images/R2.jpg" alt="Review" class="img-fluid mb-2" style="max-width: 150px;">
+                    <div class="d-flex justify-content-between text-muted small">
+                      <span>1 HOUR AGO</span>
+                      <div>
+                        <a href="#" class="text-decoration-none me-2">REPLY</a>
+                        <span class="text-danger">♥</span> <span>3</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="col">
+              <div class="card p-3 h-100">
+                <div class="d-flex align-items-start">
+                  <img src="FR_Images/woman.png" alt="Profile" class="rounded-circle me-3" width="50" height="50">
+                  <div>
+                    <h6 class="mb-0">
+                      <strong><a href="#" class="text-decoration-none text-danger">Shuvee Taranta</a></strong> reviewed 
+                      <a href="#" class="text-decoration-none text-danger">MugShot</a>
+                    </h6>
+                    <div class="text-warning my-1">★★★★ 4.0</div>
+                    <p class="mb-1">Felix, this was the first time I ever made a kidney bean salad...</p>
+                    <img src="FR_Images/R3.jpg" alt="Review" class="img-fluid mb-2" style="max-width: 150px;">
+                    <div class="d-flex justify-content-between text-muted small">
+                      <span>45 MINUTES AGO</span>
+                      <div>
+                        <a href="#" class="text-decoration-none me-2">REPLY</a>
+                        <span class="text-danger">♥</span> <span>4</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-3 h-100">
+                <div class="d-flex align-items-start">
+                  <img src="FR_Images/man2.png" alt="Profile" class="rounded-circle me-3" width="50" height="50">
+                  <div>
+                    <h6 class="mb-0">
+                      <strong><a href="#" class="text-decoration-none text-danger">Michael Segar</a></strong> reviewed 
+                      <a href="#" class="text-decoration-none text-danger">Doc Wings</a>
+                    </h6>
+                    <div class="text-warning my-1">★★★★★ 5.0</div>
+                    <p class="mb-1">Felix, this was the first time I ever made a kidney bean salad...</p>
+                    <img src="FR_Images/d4.jpg" alt="Review" class="img-fluid mb-2" style="max-width: 150px;">
+                    <div class="d-flex justify-content-between text-muted small">
+                      <span>AN HOUR AGO</span>
+                      <div>
+                        <a href="#" class="text-decoration-none me-2">REPLY</a>
+                        <span class="text-danger">♥</span> <span>10</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
           </div>
-        </section> 
+        </div>
+      </section>
+      
           <hr class="footer-line text-light" id="What Food">
       </section>
       <section class="the-crunch text-warning py-5 text-center bg-emphasis">
         <div class="container">
-          <h1 class="display-4 fw-bold mt-4">DocWings Foods, Snacks and Drinks</h1>
+          <h1 class="display-4 fw-bold mt-4">The Crunch Foods, Snacks and Drinks</h1>
           <form class="d-flex justify-content-center mb-4" role="search">
             <input class="form-control me-2 w-50 border-warning" type="search" placeholder="What food did you crave today?" aria-label="Search">
             <button class="btn btn-outline-warning" type="submit">Search</button>
@@ -174,9 +288,9 @@
           </div>
         </div>
         
-
+      <hr class="footer-line text-light">
       <hr class="footer-line text-light" id="MAIN">
-      <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+      <section class="the-crunch text-warning py-5 text-start bg-emphasis">
         <div class="container">
           <h1 class="display-4 fw-bold mb-4 mt-4">Main</h1>
           <p class="the-crunch text-dark lead mb-4"> This are the Main Dish of The Crunch. Serves a Boneless Chicken with different flavors of sauce that you can try.</p>
@@ -184,370 +298,195 @@
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCHONEYGARLIC.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Honey Garlic</h5>
+                <h5 class="card-title">HONEY GARLIC</h5>
                 <p class="card-text">Sweet and savory boneless Korean chicken glazed with honey garlic.</p>
               </div>
             </div>
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCKSTYLE.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">K-Style</h5>
+                <h5 class="card-title">K-STYLE</h5>
                 <p class="card-text">A bold Korean-style chicken packed with traditional flavors and heat.</p>
               </div>
             </div>
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCTERIYAKI.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Teriyaki</h5>
+                <h5 class="card-title">TERIYAKI</h5>
                 <p class="card-text">Tender chicken coated in a rich and tangy teriyaki glaze.</p>
               </div>
             </div>
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCCHEESYBACON.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Cheesy Bacon</h5>
+                <h5 class="card-title">CHEESY BACON</h5>
                 <p class="card-text">Crispy chicken topped with melted cheese and smoky bacon bits.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <hr class="footer-line text-light mt-4">
+      <hr class="footer-line text-light mt-4">
       <hr class="footer-line text-light" id="Drinks">
-      <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+      <section class="the-crunch text-warning py-5 text-start bg-emphasis">
         <div class="container">
           <h1 class="display-4 fw-bold mb-4 mt-4">Drinks</h1>
-          <p class="the-crunch text-dark lead mb-4">This are the Main Dish of The Crunch. Serves a Boneless Chicken with different flavors of sauce that you can try.</p>
+          <p class="the-crunch text-dark lead mb-4">This are Drinks of The Crunch serves a cold and refreshing fruity flavors.</p>
           <div class="d-flex flex-wrap justify-content-center gap-4">
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCD1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Honey Garlic</h5>
-                <p class="card-text">Sweet and savory boneless Korean chicken glazed with honey garlic.</p>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#D1">View</button>
+                <h5 class="card-title">STRAWBERRY</h5>
+                <p class="card-text">Sweet and fruity with the taste of fresh strawberries.</p>
               </div>
             </div>
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCD2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">K-Style</h5>
-                <p class="card-text">A bold Korean-style chicken packed with traditional flavors and heat.</p>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#D2">View</button>
+                <h5 class="card-title">GREEN APPLE</h5>
+                <p class="card-text">Crisp and tangy with a refreshing apple bite.</p>
               </div>
             </div>
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCD3.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Teriyaki</h5>
-                <p class="card-text">Tender chicken coated in a rich and tangy teriyaki glaze.</p>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#D3">View</button>
+                <h5 class="card-title">LYCHEE </h5>
+                <p class="card-text">Light, tropical, and sweet with a floral finish.</p>
               </div>
             </div>
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCD4.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Cheesy Bacon</h5>
-                <p class="card-text">Crispy chicken topped with melted cheese and smoky bacon bits.</p>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#D4">View</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="D1" tabindex="-1" aria-labelledby="M1Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M1Label">Honey Garlic</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/TCD1.jpg" class="img-fluid rounded mb-3" alt="TCD1">
-                <p>Flavorful and sticky boneless chicken glazed with honey and garlic—perfectly balanced sweetness.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="D2" tabindex="-1" aria-labelledby="M2Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M2Label">K-Style</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/TCD2.jpg" class="img-fluid rounded mb-3" alt="TCD2">
-                <p>Traditional Korean-style fried chicken bursting with spicy and savory flavors.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="D3" tabindex="-1" aria-labelledby="M3Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M3Label">Teriyaki</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/TCD3.jpg" class="img-fluid rounded mb-3" alt="TCD3">
-                <p>A rich, tangy teriyaki-glazed chicken dish that's both satisfying and craveable.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="D4" tabindex="-1" aria-labelledby="M4Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M4Label">Cheesy Bacon</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/TCD4.jpg" class="img-fluid rounded mb-3" alt="TCD4">
-                <p>Creamy, cheesy, and topped with crispy bacon—this one's a full flavor explosion.</p>
+                <h5 class="card-title">BLUEBERRY</h5>
+                <p class="card-text"> Rich and juicy with a hint of tartness.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
       <hr class="footer-line text-light" id="Snacks">
-      <section class="the-crunch text-warning py-5 text-center bg-emphasis">
+      <section class="the-crunch text-warning py-5 text-start bg-emphasis">
         <div class="container">
           <h1 class="display-4 fw-bold mb-4 mt-4">Snacks</h1>
-          <p class="the-crunch text-dark lead mb-4">This are the Main Dish of The Crunch. Serves a Boneless Chicken with different flavors of sauce that you can try.</p>
+          <p class="the-crunch text-dark lead mb-4">This are the Snacks of The Crunch. Makes satisfy you after eating the main meal with salty and sweet crunchy snacks.</p>
           <div class="d-flex flex-wrap justify-content-center gap-4">
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCC1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Honey Garlic</h5>
-                <p class="card-text">Sweet and savory boneless Korean chicken glazed with honey garlic.</p>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#S1">View</button>
+                <h5 class="card-title">CHICKEN SKIN HOT&SPICY</h5>
+                <p class="card-text">Crispy and fiery with a bold spicy kick.</p>
               </div>
             </div>
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCC2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">K-Style</h5>
-                <p class="card-text">A bold Korean-style chicken packed with traditional flavors and heat.</p>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#S2">View</button>
+                <h5 class="card-title">CHICKEN SKIN CLASSIC</h5>
+                <p class="card-text">Crunchy and savory with simple, seasoned goodness.</p>
               </div>
             </div>
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCC3.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Honey Garlic</h5>
-                <p class="card-text">Sweet and savory boneless Korean chicken glazed with honey garlic.</p>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#S1">View</button>
+                <h5 class="card-title">CHICKEN SKIN BBQ</h5>
+                <p class="card-text">Smoky and sweet with a BBQ glaze.</p>
               </div>
             </div>
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCC5.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">K-Style</h5>
-                <p class="card-text">A bold Korean-style chicken packed with traditional flavors and heat.</p>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#S2">View</button>
+                <h5 class="card-title">CHICKEN SKIN TRUFFLE</h5>
+                <p class="card-text"> Crispy chicken skin with a hint of earthy truffle.</p>
               </div>
             </div>
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCCORNDOG1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Teriyaki</h5>
-                <p class="card-text">Tender chicken coated in a rich and tangy teriyaki glaze.</p>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#S3">View</button>
+                <h5 class="card-title">OVERLOAD CORNDOG</h5>
+                <p class="card-text"> Half hotdog, half mozzarella, coated in crispy potato.</p>
               </div>
             </div>
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCCORNDOG4.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Cheesy Bacon</h5>
-                <p class="card-text">Crispy chicken topped with melted cheese and smoky bacon bits.</p>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#S4">View</button>
+                <h5 class="card-title">MOZZA CORNDOG</h5>
+                <p class="card-text">Full mozzarella stick inside a crunchy corndog coat.</p>
               </div>
             </div>
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCCORNDOG2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Teriyaki</h5>
-                <p class="card-text">Tender chicken coated in a rich and tangy teriyaki glaze.</p>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#S3">View</button>
+                <h5 class="card-title">POTATO CORNDOG</h5>
+                <p class="card-text">Full hotdog wrapped in golden potato bits.</p>
               </div>
             </div>
             <div class="card border-warning" style="width: 18rem;">
               <img src="FR_Images/TCCORNDOG3.jpg"class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Cheesy Bacon</h5>
-                <p class="card-text">Crispy chicken topped with melted cheese and smoky bacon bits.</p>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#S4">View</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="S1" tabindex="-1" aria-labelledby="M1Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M1Label">Honey Garlic</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/TCC1.jpg" class="img-fluid rounded mb-3" alt="TCD1">
-                <p>Flavorful and sticky boneless chicken glazed with honey and garlic—perfectly balanced sweetness.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="S2" tabindex="-1" aria-labelledby="M2Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M2Label">K-Style</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/TCC2.jpg" class="img-fluid rounded mb-3" alt="TCD2">
-                <p>Traditional Korean-style fried chicken bursting with spicy and savory flavors.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="S3" tabindex="-1" aria-labelledby="M3Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M3Label">Teriyaki</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/TCCORNDOG1.jpg" class="img-fluid rounded mb-3" alt="TCD3">
-                <p>A rich, tangy teriyaki-glazed chicken dish that's both satisfying and craveable.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="S4" tabindex="-1" aria-labelledby="M4Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header justify-content-between">
-                <h5 class="modal-title" id="M4Label">Cheesy Bacon</h5>
-                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="modal-body">
-                <img src="FR_Images/TCCORNDOG4.jpg" class="img-fluid rounded mb-3" alt="TCD4">
-                <p>Creamy, cheesy, and topped with crispy bacon—this one's a full flavor explosion.</p>
+                <h5 class="card-title">CLASSIC CORNDOG</h5>
+                <p class="card-text">A mix of hotdog and mozzarella in one crispy bite.A mix of hotdog and mozzarella in one crispy bite.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
       </section>
-      
-      <section class="the-crunch text-warning py-5 bg-emphasis">
-        <div class="container">
-          <h1 class="fw-bold text-start">Customers Review</h1>
-        <div class="container">
-        <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
-          <div class="col">
-            <div class="card p-3 h-100">
-              <div class="d-flex align-items-start">
-                <img src="FR_Images/woman (1).png" alt="Profile" class="rounded-circle me-3" width="50" height="50">
-                <div>
-                  <h6 class="mb-0">
-                    <strong><a href="#" class="text-decoration-none text-danger">Mika Malacansa</a></strong> reviewed 
-                    <a href="#" class="text-decoration-none text-danger">The Crunch</a>
-                  </h6>
-                  <div class="text-warning my-1">★★★ 3.0</div>
-                  <p class="mb-1">Felix, this was the first time I ever made a kidney bean salad...</p>
-                  <img src="FR_Images/R1.jpg" alt="Review" width="150" height="150">
-                  <div class="d-flex justify-content-between text-muted small">
-                    <span>2 HOURS AGO</span>
-                    <div>
-                      <a href="#" class="text-decoration-none me-2">REPLY</a>
-                      <span class="text-danger">♥</span> <span>6</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <footer class="bg-warning-subtle text-dark py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
+            <img src="FR_Images/NutriCravesLogo.png" alt="NutriCraves Logo" width="150" height="120" class="img-fluid">
           </div>
-          <div class="col">
-            <div class="card p-3 h-100">
-              <div class="d-flex align-items-start">
-                <img src="FR_Images/man.png" alt="Profile" class="rounded-circle me-3" width="50" height="50">
-                <div>
-                  <h6 class="mb-0">
-                    <strong><a href="#" class="text-decoration-none text-danger">Emilio Deaz</a></strong> reviewed 
-                    <a href="#" class="text-decoration-none text-danger">Calle Cafe</a>
-                  </h6>
-                  <div class="text-warning my-1">★★★★★ 5.0</div>
-                  <p class="mb-1">Felix, this was the first time I ever made a kidney bean salad...</p>
-                  <img src="FR_Images/R2.jpg" alt="Review" width="150" height="150">
-                  <div class="d-flex justify-content-between text-muted small">
-                    <span>1 HOUR AGO</span>
-                    <div>
-                      <a href="#" class="text-decoration-none me-2">REPLY</a>
-                      <span class="text-danger">♥</span> <span>3</span>
-                    </div>
-                  </div>
-                </div>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <h5>ABOUT US</h5>
+                <ul class="list-unstyled">
+                  <li><b>Sharien Salarda | Charles Carillo</b></li>
+                  <li>At your service with NutriCraves</li>
+                  <li>
+                    <a href="contact.html" class="link-hover-underline">
+                      <i class="bi bi-envelope-fill me-1"></i>Contact Us
+                    </a>
+                  </li>
+                </ul>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card p-3 h-100">
-              <div class="d-flex align-items-start">
-                <img src="FR_Images/woman.png" alt="Profile" class="rounded-circle me-3" width="50" height="50">
-                <div>
-                  <h6 class="mb-0">
-                    <strong><a href="#" class="text-decoration-none text-danger">Shuvee Taranta</a></strong> reviewed 
-                    <a href="#" class="text-decoration-none text-danger">MugShot</a>
-                  </h6>
-                  <div class="text-warning my-1">★★★★ 4.0</div>
-                  <p class="mb-1">Felix, this was the first time I ever made a kidney bean salad...</p>
-                  <img src="FR_Images/R3.jpg" alt="Review" width="150" height="150">
-                  <div class="d-flex justify-content-between text-muted small">
-                    <span>45 MINUTES AGO</span>
-                    <div>
-                      <a href="#" class="text-decoration-none me-2">REPLY</a>
-                      <span class="text-danger">♥</span> <span>4</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card p-3 h-100">
-              <div class="d-flex align-items-start">
-                <img src="FR_Images/man2.png" alt="Profile" class="rounded-circle me-3" width="50" height="50">
-                <div>
-                  <h6 class="mb-0">
-                    <strong><a href="#" class="text-decoration-none text-danger">Michael Segar</a></strong> reviewed 
-                    <a href="#" class="text-decoration-none text-danger">Doc Wings</a>
-                  </h6>
-                  <div class="text-warning my-1">★★★★★ 5.0</div>
-                  <p class="mb-1">Felix, this was the first time I ever made a kidney bean salad...</p>
-                  <img src="FR_Images/d4.jpg" alt="Review" width="150" height="150">
-                  <div class="d-flex justify-content-between text-muted small">
-                    <span>AN HOUR AGO</span>
-                    <div>
-                      <a href="#" class="text-decoration-none me-2">REPLY</a>
-                      <span class="text-danger">♥</span> <span>10</span>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-md-6 mb-3">
+                <h5>RESTAURANTS SOCIAL MEDIA</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.facebook.com/thecrunchsouthcaloocan" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>The Crunch
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/MugShotKape" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>MugShot
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/lavacrazeph" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>Lava Craze
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/docwings" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>Doc Wings
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
+        <hr class="bg-secondary">
+        <p class="small text-center">
+          NutriCraves Food Guide Disclaimer: This information is for educational purposes only and not a substitute for medical advice. Please consult a healthcare professional for personalized nutrition guidance.
+        </p>
+        <p class="mb-0 mt-2 text-center">&copy; 2025 NutriCraves.All rights reserved</p>
       </div>
-    </section>
-      <footer class="bg-warning-subtle text-dark py-4">
-        <div class="container text-center">
-          <img src="FR_Images/NutriCravesLogo.png" alt="FDA" width="150" height="150">
-          <p><b>SHARIEN SALARDA | CHARLES CARILLO</b></p>
-            <p class="mb-2">&copy; 2025 NutriCraves. All rights reserved. <b>NutriCraves</b> is a health-focused food brand that offers nutritious, crave-worthy meals made with fresh, wholesome ingredients. It's all about satisfying your cravings the healthy way.</p>
-          </div>
-      </footer>
+    </footer>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
