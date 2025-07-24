@@ -280,7 +280,7 @@
             <div class="card h-100 border-warning">
               <img src="FR_Images/LCNACHOS.jpg" class="card-img-top" alt="BBQ">
               <div class="card-body">
-                <h5 class="card-title">Crazy Tacos</h5>
+                <h5 class="card-title">The Lava Craze Snacks</h5>
                 <p class="card-text">The Crazy Tacos</p>
                 <a href="#Snacks" class="btn btn-outline-warning btn-m">View Snacks</a>
               </div>
@@ -431,107 +431,7 @@
         </div>
       </div>
     </section>
-   
-    
-    <section class="the-crunch text-warning py-5 bg-emphasis">
-      <div class="container">
-        <h1 class="fw-bold text-start">Customers Review</h1>
-      <div class="container">
-      <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
-        <div class="col">
-          <div class="card p-3 h-100">
-            <div class="d-flex align-items-start">
-              <img src="FR_Images/woman (1).png" alt="Profile" class="rounded-circle me-3" width="50" height="50">
-              <div>
-                <h6 class="mb-0">
-                  <strong><a href="#" class="text-decoration-none text-danger">Mika Malacansa</a></strong> reviewed 
-                  <a href="#" class="text-decoration-none text-danger">The Crunch</a>
-                </h6>
-                <div class="text-warning my-1">★★★ 3.0</div>
-                <p class="mb-1">Felix, this was the first time I ever made a kidney bean salad...</p>
-                <img src="FR_Images/R1.jpg" alt="Review" width="150" height="150">
-                <div class="d-flex justify-content-between text-muted small">
-                  <span>2 HOURS AGO</span>
-                  <div>
-                    <a href="#" class="text-decoration-none me-2">REPLY</a>
-                    <span class="text-danger">♥</span> <span>6</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card p-3 h-100">
-            <div class="d-flex align-items-start">
-              <img src="FR_Images/man.png" alt="Profile" class="rounded-circle me-3" width="50" height="50">
-              <div>
-                <h6 class="mb-0">
-                  <strong><a href="#" class="text-decoration-none text-danger">Emilio Deaz</a></strong> reviewed 
-                  <a href="#" class="text-decoration-none text-danger">Calle Cafe</a>
-                </h6>
-                <div class="text-warning my-1">★★★★★ 5.0</div>
-                <p class="mb-1">Felix, this was the first time I ever made a kidney bean salad...</p>
-                <img src="FR_Images/R2.jpg" alt="Review" width="150" height="150">
-                <div class="d-flex justify-content-between text-muted small">
-                  <span>1 HOUR AGO</span>
-                  <div>
-                    <a href="#" class="text-decoration-none me-2">REPLY</a>
-                    <span class="text-danger">♥</span> <span>3</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card p-3 h-100">
-            <div class="d-flex align-items-start">
-              <img src="FR_Images/woman.png" alt="Profile" class="rounded-circle me-3" width="50" height="50">
-              <div>
-                <h6 class="mb-0">
-                  <strong><a href="#" class="text-decoration-none text-danger">Shuvee Taranta</a></strong> reviewed 
-                  <a href="#" class="text-decoration-none text-danger">MugShot</a>
-                </h6>
-                <div class="text-warning my-1">★★★★ 4.0</div>
-                <p class="mb-1">Felix, this was the first time I ever made a kidney bean salad...</p>
-                <img src="FR_Images/R3.jpg" alt="Review" width="150" height="150">
-                <div class="d-flex justify-content-between text-muted small">
-                  <span>45 MINUTES AGO</span>
-                  <div>
-                    <a href="#" class="text-decoration-none me-2">REPLY</a>
-                    <span class="text-danger">♥</span> <span>4</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card p-3 h-100">
-            <div class="d-flex align-items-start">
-              <img src="FR_Images/man2.png" alt="Profile" class="rounded-circle me-3" width="50" height="50">
-              <div>
-                <h6 class="mb-0">
-                  <strong><a href="#" class="text-decoration-none text-danger">Michael Segar</a></strong> reviewed 
-                  <a href="#" class="text-decoration-none text-danger">Lava Craze</a>
-                </h6>
-                <div class="text-warning my-1">★★★★★ 5.0</div>
-                <p class="mb-1">Felix, this was the first time I ever made a kidney bean salad...</p>
-                <img src="FR_Images/d4.jpg" alt="Review" width="150" height="150">
-                <div class="d-flex justify-content-between text-muted small">
-                  <span>AN HOUR AGO</span>
-                  <div>
-                    <a href="#" class="text-decoration-none me-2">REPLY</a>
-                    <span class="text-danger">♥</span> <span>10</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  
     </section>
     <footer class="bg-warning-subtle text-dark py-4">
       <div class="container">
@@ -588,7 +488,25 @@
         <p class="mb-0 mt-2 text-center">&copy; 2025 NutriCraves.All rights reserved</p>
       </div>
     </footer>
-              
+              <script>
+  document.querySelector('form[role="search"]').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const searchTerm = document.querySelector('input[type="search"]').value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+      const title = card.querySelector('.card-title')?.textContent.toLowerCase() || '';
+      const text = card.querySelector('.card-text')?.textContent.toLowerCase() || '';
+      
+      if (title.includes(searchTerm) || text.includes(searchTerm)) {
+        card.parentElement.style.display = 'block';
+      } else {
+        card.parentElement.style.display = 'none';
+      }
+    });
+  });
+</script>
+
               
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
